@@ -244,7 +244,7 @@ input::placeholder {
     text-decoration: none;
 }
 
-.burger{
+.burger-menu{
     display: none;
 }
 
@@ -365,7 +365,96 @@ input::placeholder {
         -o-border-radius: 5px;
     }
 
+    .burger-menu{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* бургер меню */
+    #menu__toggle {
+        opacity: 0;
+    }
     
+    #menu__toggle:checked+.menu__btn>span {
+        transform: rotate(45deg);
+    }
+    
+    #menu__toggle:checked+.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0deg);
+    }
+    
+    #menu__toggle:checked+.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    
+    #menu__toggle:checked~.menu__box {
+        right: 0 !important;
+    }
+    
+    .menu__btn {
+        position: fixed;
+        top: 35px;
+        right: 25px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+        transition-duration: 1s;
+    }
+    
+    .menu__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+    
+    .menu__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+    
+    .menu__box {
+        display: block;
+        position: fixed;
+        top: 80px;
+        right: -110%;
+        width: 100vw;
+        height: 90vh;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        background-color: #ECEFF1;
+        transition-duration: .75s;
+    }
+    
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        transition-duration: 1s;
+    }
+    
+    .menu__item:hover {
+        background-color: #CFD8DC;
+    }
+    /* бургер меню */
 
     
 }
