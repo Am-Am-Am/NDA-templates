@@ -22,29 +22,73 @@
 <body>
 
     <header>
-
         <!-- летающая шапка -->
-        <div class="headerInner">
-            <nav class="navbar navbar-expand-xl navbar-light bg-light">
-                <div class="container">
-                    <div class="logo">
-                        <a class="navbar-brand" href="#">
+        <div class="header nav-container">
+            <nav>
+
+                <div class="headerInner">
+                    <a class="navbar-brand" href="#">
+                        <div class="logo">
                             <img src="images/logo.svg" alt="Логотип" height="30">
-                        </a>
+                            <span>
+                                НДА <br>
+                                Деловая медицинская <br>
+                                компания
+                            </span>
+
+                        </div>
+                    </a>
+                    <div class="headerList">
+                        <ul class="">
+                            <li class="nav-item">
+                                <a class="" href="#">
+                                    <div class="el">
+                                        <img src="images/Условия работы.svg" alt="" class="me-2">
+                                        <div>Условия работы</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="" href="#">
+                                    <div class="el">
+                                        <img src="images/catalog.svg" alt="" class="me-2">
+                                        <div>Каталог</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="" href="#">
+                                    <div class="el ">
+                                        <img src="images/Сертификаты.svg" alt="РУ и Сертификаты" class="me-2">
+                                        <div>РУ и Сертификаты</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="" href="#">
+                                    <div class="el ">
+                                        <img src="images/контакты.svg" alt="Контакты" class="me-2">
+                                        <div>Контакты</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
 
-                    <!-- Поле поиска для мобильных устройств -->
-                    <div class="search d-xl-none me-3">
-                        <div class="formInner">
-                            <input type="text" placeholder="Искать по артиклу">
-                            <button type="submit">
-                                <div class="searchButton button"><img src="images/SearchButton.svg" alt=""
-                                        class="searchImg"></div>
-                            </button>
+
+                    <div class="rightSideInner">
+                        <div class="search">
+                            <div class="formInner">
+                                <form action="" class="formInner">
+                                    <input type="text" placeholder="Искать по артиклу">
+                                    <button type="submit">
+                                        <div class="searchButton button"><img src="images/SearchButton.svg" alt=""
+                                                class="searchImg"></div>
+                                    </button>
+                                </form>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Поле с контактами для мобильных устройств -->
-                    <div class="search d-xl-none me-3">
+
                         <div class="info">
                             <div class="time">
                                 Пн-Пт: 10:00 - 18.00
@@ -55,84 +99,24 @@
                         </div>
                     </div>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse " id="navbarNav">
-                        <div class="headerList w-100">
-                            <ul class="navbar-nav  rounded">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <div class="el d-flex align-items-center">
-                                            <img src="images/Условия работы.svg" alt="" class="me-2">
-                                            <div>Условия работы</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <div class="el">
-                                            <img src="images/Условия оплаты.svg" alt="" class="me-2">
-                                            <div>Условия оплаты</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <div class="el">
-                                            <img src="images/Условия доставки.svg" alt="" class="me-2">
-                                            <div>Условия доставки</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <div class="el ">
-                                            <img src="images/Сертификаты.svg" alt="РУ и Сертификаты" class="me-2">
-                                            <div>РУ и Сертификаты</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <div class="el ">
-                                            <img src="images/контакты.svg" alt="Контакты" class="me-2">
-                                            <div>Контакты</div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                   
-
-                    <!-- Поле поиска для больших экранов -->
-                    <div class="search  d-none d-xl-block">
+                    <div class="searchSmallScreen">
                         <div class="formInner">
-                            <input type="text" placeholder="Искать по артиклу">
-                            <button type="submit">
-                                <div class="searchButton button"><img src="images/SearchButton.svg" alt=""
-                                        class="searchImg"></div>
-                            </button>
+                            <form action="" class="formInner">
+                                <input type="text" placeholder="Искать по артиклу">
+                                <button type="submit">
+                                    <div class="searchButton button"><img src="images/SearchButton.svg" alt=""
+                                            class="searchImg"></div>
+                                </button>
+                            </form>
                         </div>
+                    </div>
+                    <div class="burger-menu">
+                        s
                     </div>
 
-                    <!-- Поле с контактами для больших экранов -->
-                    <div class="search me-3 d-none d-xl-block">
-                        <div class="info">
-                            <div class="time">
-                                Пн-Пт: 10:00 - 18.00
-                            </div>
-                            <div class="number">
-                                <a href="tel:+78127140614">+ 7 (812) 714-06-14</a>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
+
             </nav>
         </div>
 
@@ -335,7 +319,7 @@
         <!-- плавающий элемент с формами связи -->
 
         <div class="formsContainer">
-            
+
             <div class="formButton">
                 <button id="toggleOptions" class="formButtonChoice flex">
                     <img src="images/Call.svg" alt="">
@@ -514,7 +498,8 @@
         </div>
     </footer>
     <script>
-      </script>
+
+    </script>
     <script src="scripts/formController.js"></script>
 </body>
 
