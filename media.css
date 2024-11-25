@@ -467,7 +467,7 @@
     .infoMain{
         display: flex;
         flex-direction: column-reverse;
-        max-height: 1250px;
+        height: 900px;
         width: 100%;
         align-items: center;
     }
@@ -556,6 +556,8 @@
         min-height: 300px;
     }
 
+    
+
 }
 
 @media (max-width: 800px) {
@@ -583,6 +585,8 @@
         width: 240px;
         min-height: 300px;
     }
+
+   
 }
 
 
@@ -809,6 +813,10 @@
         width: 100%;
     }
 
+    .footerDataEls ul{
+        list-style: none;
+    }
+
     .formButton{
         left: 85vw;
         top: 85vh;
@@ -858,6 +866,12 @@
         font-weight: 700;
         font-size: 25px;
         line-height: 160%;
+    }
+
+    .btn-close{
+        position: absolute;
+        right: 20px;
+        top: 20px;
     }
 
     /* .form-floating>.form-control{
