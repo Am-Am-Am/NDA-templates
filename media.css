@@ -543,12 +543,11 @@
     }
 
     .product_bg {
-        background-position: bottom bottom;
         width: 100vw;
         height: 30%;
         position: absolute;
         top: 70vh;
-        right: 0;
+        left: 0;
         bottom: 0;
         z-index: -1;
         background-size: cover;
@@ -591,18 +590,13 @@
 }
 
 @media (width < 480px) {
-    .formButton{
-        left: 85vw;
-        top: 85vh;
-        height: 50px;
-        width: 50px;
+    .header{
+        margin-top: 10px;
     }
 
-    .formButtonChoice{
-        height: 50px;
-        width: 50px;
-    }
+    .product_bg{
 
+    }
     .subheaderInfo{
         height: 50vh;
         justify-content: space-evenly;
@@ -644,8 +638,14 @@
         height: 55px;
     }
   
+    .subheaderImage{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+
     .subheaderImage img{
-        width: 50vw;
+        width: 20vh;
         height: 30vh;
     }
 
@@ -668,7 +668,7 @@
     }
 
     .infoMain{
-        min-height: 860px;
+        min-height: 900px;
     }
     .infoText h3{
         font-family: var(--third-family);
@@ -680,6 +680,14 @@
     .infoText p{
         font-weight: 400;
         font-size: 16px;
+    }
+
+    .infoImg{
+        width: 100%;
+    }
+
+    .infoImg img{
+        width: 100%;
     }
 
     .place h2{
@@ -703,6 +711,7 @@
 
     .footerInner{
         padding: 20px;
+        margin-bottom: 0;
     }
     .footerLogo{
         width: 100%;
@@ -716,6 +725,61 @@
         display: flex;
         width: 100%;
     }
+
+    .formButton{
+        left: 85vw;
+        top: 85vh;
+        height: 50px;
+        width: 50px;
+    }
+
+    .formButtonChoice{
+        height: 50px;
+        width: 50px;
+    }
+
+    .formButton{
+        left: 80vw;
+        top: 75vh;
+    }
+
+    .formButtonOptions{
+        width: 60px;
+        height: 180px;
+    }
+
+    .formButtonEmail{
+        width: 50px;
+        height: 50px;
+    }
+
+    .formButtonCall{
+        width: 50px;
+        height: 50px;
+    }
+
+    .formButtonClose{
+        width: 50px;
+        height: 50px;
+    }
+
+    .modal{
+        margin-top: 80px;
+    }
+
+    .modal-header {
+        padding: 5px;
+    }
+    .modal-title{
+        font-family: var(--third-family);
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 160%;
+    }
+
+    /* .form-floating>.form-control{
+
+    } */
 }
 
 @media (width < 320px) {
