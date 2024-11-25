@@ -115,6 +115,9 @@
     .infoMain{
         height: 600px;
     }
+
+    /* product.html */
+    
 }
 
 
@@ -328,7 +331,7 @@
         width: 95vw;
         height: 90vh;
         margin: 0;
-        padding: 80px 0;
+        padding: 20px 0;
         list-style: none;
         background-color: #F5F5F5;
         transition-duration: .75s;
@@ -342,6 +345,7 @@
 
     .bd-links .btn1::after {
         width: 1.25em;
+        margin-left: 70%;
         line-height: 0;
         content: url("images/arrowList.svg");
         transition: transform 0.35s ease;
@@ -366,6 +370,49 @@
     .catalogBurgerInner{
         display: flex;
         flex-direction: column;
+
+    }
+    .menu__box{
+        padding: 20px;
+    }
+    .menu__box ul{
+        list-style: none;
+        padding: 0;
+        
+    }
+
+    .menu__box .info{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+
+    .bd-links li{
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 18px;
+        color: #1a1a18;
+        height: 40px;
+        border-bottom: 2px solid #b7b7b7;
+        margin-bottom: 10px;
+    }
+
+
+    .bd-links li a{
+        text-decoration: none;
+        color: #1a1a18;
+    }
+
+    .collapseEl a{
+        margin-left: 20px;
+        width: 80%;
+        font-family: var(--second-family);
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 129%;
+        color: #1a1a18;
+        text-transform: uppercase;
         
     }
 

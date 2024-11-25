@@ -18,83 +18,171 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
 
 </head>
 
 <body>
 
-    <header style="height: 100px">
-        <div class="headerInner">
+    <header style="height: 0px;">
+        <!-- летающая шапка -->
+        <div class="header nav-container">
             <nav>
-                <div class="logo">
-                    <img src="images/logo.svg" alt="Логотип">
-                </div>
-                <div class="headerList">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <div class="el">
-                                    <img src="images/Условия работы.svg" alt="">
-                                    <div>Условия работы</div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="el">
-                                    <img src="images/Условия оплаты.svg" alt="">
-                                    <div>Условия оплаты</div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="el">
-                                    <img src="images/Условия доставки.svg" alt="">
-                                    <div>Условия доставки</div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="el">
-                                    <img src="images/Сертификаты.svg" alt="РУ и Сертификаты">
-                                    <div>РУ и Сертификаты</div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="el">
-                                    <img src="images/контакты.svg" alt="Контакты">
-                                    <div>Контакты</div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="search">
-                    <form action="#" method="get">
-                        <div class="formInner">
-                            <input type="text" placeholder="Искать по артиклу">
-                            <button type="submit">
-                                <div class="searchButton button"><img src="images/SearchButton.svg" alt=""
-                                        class="searchImg"></div>
-                            </button>
+
+                <div class="headerInner">
+                    <a class="navbar-brand" href="#">
+                        <div class="logo">
+                            <img src="images/logo.svg" alt="Логотип" height="30">
+                            <span>
+                                НДА <br>
+                                Деловая медицинская <br>
+                                компания
+                            </span>
+
                         </div>
-                    </form>
-                </div>
-                <div class="info">
-                    <div class="time">
-                        Пн-Пт: 10:00 - 18.00
+                    </a>
+                    <div class="headerList">
+                        <ul class="">
+                            <li class="nav-item">
+                                <a class="" href="#">
+                                    <div class="el">
+                                        <img src="images/Условия работы.svg" alt="" class="me-2">
+                                        <div>Условия работы</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="" href="#">
+                                    <div class="el">
+                                        <img src="images/catalog.svg" alt="" class="me-2">
+                                        <div>Каталог</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="" href="#">
+                                    <div class="el ">
+                                        <img src="images/Сертификаты.svg" alt="РУ и Сертификаты" class="me-2">
+                                        <div>РУ и Сертификаты</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="" href="#">
+                                    <div class="el ">
+                                        <img src="images/контакты.svg" alt="Контакты" class="me-2">
+                                        <div>Контакты</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="number">
-                        <a href="tel:+78127140614">+ 7 (812) 714-06-14</a>
+
+
+                    <div class="rightSideInner">
+                        <div class="search">
+                            <div class="formInner">
+                                <form action="" class="formInner">
+                                    <input type="text" placeholder="Искать по артиклу">
+                                    <button type="submit">
+                                        <div class="searchButton button"><img src="images/SearchButton.svg" alt=""
+                                                class="searchImg"></div>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <div class="time">
+                                Пн-Пт: 10:00 - 18.00
+                            </div>
+                            <div class="number">
+                                <a href="tel:+78127140614">+ 7 (812) 714-06-14</a>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="searchSmallScreen">
+                        <div class="formInner">
+                            <form action="" class="formInner">
+                                <input type="text" placeholder="Искать по артиклу">
+                                <button type="submit">
+                                    <div class="searchButton button"><img src="images/SearchButton.svg" alt=""
+                                            class="searchImg"></div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="burger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+
+                        <div class="menu__box">
+                            <div class="bd-links">
+                                <ul>
+                                    <li>
+                                        <a href="#">Главная</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Условия работы</a>
+                                    </li>
+                                    <li>
+                                        <div class="catalogBurgerInner">
+                                            <a class="btn1  d-inline-flex align-items-center rounded" role="button"
+                                                data-bs-toggle="collapse" data-bs-target="#components-collapse"
+                                                aria-expanded="true" aria-current="true">
+                                                Каталог
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <div class="collapse collapseList" id="components-collapse">
+                                        <ul>
+                                            <li class="collapseEl">
+                                                <a href="">JOHNSON & JOHNSON</a>
+                                            </li>
+                                            <li class="collapseEl">
+                                                <a href="">JOHNSON & JOHNSON</a>
+                                            </li>
+                                            <li class="collapseEl">
+                                                <a href="">JOHNSON & JOHNSON</a>
+                                            </li>
+                                            <li class="collapseEl">
+                                                <a href="">JOHNSON & JOHNSON</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <li>
+                                        <a href="#">Сертификаты</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Контакты</a>
+                                    </li>
+                                    <div class="info">
+                                        <div class="time">
+                                            Пн-Пт: 10:00 - 18.00
+                                        </div>
+                                        <div class="number">
+                                            <a href="tel:+78127140614">+ 7 (812) 714-06-14</a>
+                                        </div>
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-            </nav>
+
         </div>
 
+        </nav>
+        </div>
+
+
+        <!-- летающая шапка -->
+        <!-- subheader только на главной -->
     </header>
     <main style="margin-top: 130px;">
         <div class="container">
@@ -338,7 +426,9 @@
 
         <div class="formsContainer">
             <div class="formButton">
-                <button id="toggleOptions" class="formButtonChoice flex">Связь</button>
+                <button id="toggleOptions" class="formButtonChoice flex">
+                    <img src="images/Call.svg" alt="">
+                </button>
 
                 <div class="formButtonOptions" id="options" style="display: none;">
                     <div data-bs-toggle="modal" data-bs-target="#emailModal" class="formButtonEmail flex"><img
