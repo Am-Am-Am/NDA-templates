@@ -114,14 +114,47 @@
                     <div class="burger-menu">
                         <input id="menu__toggle" type="checkbox" />
                         <label class="menu__btn" for="menu__toggle">
-
                             <span></span>
-
                         </label>
 
-                        <ul class="menu__box">
+                        <div class="menu__box">
+                            <div class="bd-links">
+                                <ul>
+                                    <li>
+                                        <a href="#">Главная</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Условия работы</a>
+                                    </li>
+                                    <li>
+                                        <div class="catalogBurgerInner">
+                                            <a class="btn1  d-inline-flex align-items-center rounded" role="button"
+                                                data-bs-toggle="collapse" data-bs-target="#components-collapse"
+                                                aria-expanded="true" aria-current="true">
+                                                Каталог
+                                            </a>
+                                            <div class="collapse" id="components-collapse">
+                                                <ul>
+                                                    <li>JOHNSON & JOHNSON</li>
+                                                    <li>MEDTRONIC</li>
+                                                    <li>PORTEX SMITHS MEDICAL</li>
+                                                    <li>PHILIPS</li>
+                                                    <li>GE HEALTHCARE</li>
+                                                    <li>LOHMANN & RAUSCHER</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Сертификаты</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Контакты</a>
+                                    </li>
+                                </ul>
 
-                        </ul>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -416,7 +449,7 @@
                                         required>
                                     <label for="number">Ваш телефон</label>
                                 </div>
-                                <div class="form-floating mb-2">
+                                <div class="form-floating mb-">
                                     <textarea class="form-control" placeholder="Комментарий" id="comm"
                                         required></textarea>
                                     <label for="comm">Комментарий</label>
