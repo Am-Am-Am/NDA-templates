@@ -594,9 +594,7 @@
         margin-top: 10px;
     }
 
-    .product_bg{
-
-    }
+   
     .subheaderInfo{
         height: 50vh;
         justify-content: space-evenly;
@@ -647,6 +645,7 @@
     .subheaderImage img{
         width: 20vh;
         height: 30vh;
+        margin-bottom: 2px;
     }
 
     .catalog h2{
