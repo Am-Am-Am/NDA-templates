@@ -184,8 +184,8 @@
         <!-- летающая шапка -->
         <!-- subheader только на главной -->
     </header>
-    <main style="margin-top: 130px;">
-        <div class="container">
+    <main class="main">
+        <div class="container1">
             <div class="breadCrumbs">
                 Главная / Medtronic
             </div>
@@ -331,7 +331,7 @@
                             <div class="placeOrder">
                                 <h2>Форма оформления заказа</h2>
                                 <form action=""></form>
-                                <div class="container mt-5">
+                                <div class="container1 mt-5">
 
 
 
@@ -425,6 +425,7 @@
         <!-- плавающий элемент с формами связи -->
 
         <div class="formsContainer">
+
             <div class="formButton">
                 <button id="toggleOptions" class="formButtonChoice flex">
                     <img src="images/Call.svg" alt="">
@@ -449,33 +450,37 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="emailModalLabel">Написать письмо</h5>
-                            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"
-                                id='close1'></button> -->
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"
+                                id='close1'></button>
                         </div>
                         <div class="modal-body">
                             <form>
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Ваше имя" required>
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="name" placeholder="Ваше имя" required>
                                     <label for="name">Ваше имя</label>
                                 </div>
-                                <div class="form-floating mb-3">
-                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Ваш телефон" required>
+                                <div class="form-floating mb-2">
+                                    <input type="tel" class="form-control" id="phone" placeholder="Ваш телефон"
+                                        required>
                                     <label for="phone">Ваш телефон</label>
                                 </div>
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Ваш Email" required>
+                                <div class="form-floating mb-2">
+                                    <input type="email" class="form-control" id="email" placeholder="Ваш Email"
+                                        required>
                                     <label for="email">Ваш Email</label>
                                 </div>
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="org_name" name="org_name" placeholder="Название организации" required>
-                                    <label for="org_name">Название организации</label>
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="org" placeholder="Название организации"
+                                        required>
+                                    <label for="org">Название организации</label>
                                 </div>
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="inn" name="inn" placeholder="ИНН" required>
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="inn" placeholder="ИНН" required>
                                     <label for="org">ИНН</label>
                                 </div>
-                                <div class="form-floating mb-3">
-                                    <textarea class="form-control" placeholder="Текст письма" id="text" name="text" required></textarea>
+                                <div class="form-floating mb-2">
+                                    <textarea class="form-control" placeholder="Текст письма" id="text"
+                                        required></textarea>
                                     <label for="org">Текст письма</label>
                                 </div>
                                 <!-- <div class="g-recaptcha mb-3" data-sitekey="ВАШ_САЙТ_КЛЮЧ"></div> -->
@@ -492,22 +497,24 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="callModalLabel">Заказать звонок</h5>
-                            <!-- <button type="button" id='close2' class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Закрыть"></button> -->
+                            <button type="button" id='close2' class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Закрыть"></button>
                         </div>
                         <div class="modal-body">
                             <form>
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Ваше имя" required>
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="name" placeholder="Ваше имя" required>
                                     <label for="name">Ваше имя</label>
                                 </div>
-                                <div class="form-floating mb-3">
-                                    <input type="tel" class="form-control" placeholder="Ваш телефон" id='number' name="number" required>
+                                <div class="form-floating mb-2">
+                                    <input type="tel" class="form-control" placeholder="Ваш телефон" id='number'
+                                        required>
                                     <label for="number">Ваш телефон</label>
                                 </div>
-                                <div class="form-floating mb-3">
-                                    <textarea class="form-control" placeholder="Комментарий" id="comm_text" name="comm_text"required></textarea>
-                                    <label for="comm_text">Комментарий</label>
+                                <div class="form-floating mb-2">
+                                    <textarea class="form-control" placeholder="Комментарий" id="comm"
+                                        required></textarea>
+                                    <label for="comm">Комментарий</label>
                                 </div>
                                 <!-- <div class="g-recaptcha mb-3" data-sitekey="ВАШ_САЙТ_КЛЮЧ"></div> -->
                                 <button type="submit" class="btn btn-success">Отправить</button>
@@ -745,7 +752,7 @@
 
     </main>
     <footer>
-        <div class="container">
+        <div class="container1">
             <div class="footerInner">
                 <div class="footerInfo">
                     <div class="footerLogo">

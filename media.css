@@ -64,9 +64,10 @@
 
 
     /* catalog */
-    .choice{
+    .choice {
         width: 60vh;
     }
+
     .catalogItem {
         width: 280px;
         min-height: 400px;
@@ -95,29 +96,72 @@
         font-size: 16px;
     }
 
-    .infoMain{
+    .infoMain {
         padding: 30px;
     }
 
-    .infoText h3{
+    .infoText h3 {
         font-size: 60px;
         white-space: nowrap;
     }
 
-    .infoText p{
+    .infoText p {
         font-size: 18px;
     }
 
-    .infoImg{
+    .infoImg {
         width: 520px;
     }
 
-    .infoMain{
+    .infoMain {
         height: 600px;
     }
 
     /* product.html */
-    
+
+
+    /* brand.html */
+    .main{
+        margin-top: 200px;
+    }
+
+    .brandBanner {
+        height: 180px;
+    }
+
+    .brandLogo {
+        height: 140px;
+    }
+
+    .brandLogo img {
+        height: 140px;
+        width: 230px;
+    }
+
+    .brandInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brandInfo h1 {
+        font-size: 68px;
+    }
+
+    .brandInfo h2 {
+        font-size: 25px;
+    }
+
+    .catalogBrandItem {
+        height: 220px;
+        font-size: 28px;
+    }
+
+    .catalogBrandItemImg {
+        width: 190px;
+        height: 190px;
+    }
+
 }
 
 
@@ -150,35 +194,38 @@
     }
 
 
-    .subheaderImage{
+    .subheaderImage {
         margin-right: 0;
     }
+
     .subheaderImage img {
         width: 370px;
-        
+
     }
 
-    .product_bg{
+    .product_bg {
         height: 90%;
     }
 
     /* catalog */
-    .catalog h2{
+    .catalog h2 {
         font-size: 60px;
     }
 
-    .catalogItems{
+    .catalogItems {
         gap: 30px;
     }
-    .choice{
+
+    .choice {
         width: 60vh;
         font-size: 18px;
     }
+
     .catalog {
         margin-top: 0;
     }
 
-    .catalog h2{
+    .catalog h2 {
         margin: 0;
         margin-bottom: 30px;
     }
@@ -198,13 +245,30 @@
         min-height: 370px;
     }
 
-    .infoText h3{
+    .infoText h3 {
         font-size: 70px;
     }
 
-    .infoText p{
+    .infoText p {
         font-size: 16px;
     }
+
+    /* brand.html */
+    .main{
+        margin-top: 180px;
+    }
+
+    .catalogBrandItem {
+        height: 200px;
+        font-size: 26px;
+
+    }
+
+    .catalogBrandItemImg {
+        width: 180px;
+        height: 180px;
+    }
+
 
 }
 
@@ -309,7 +373,7 @@
         position: absolute;
         width: 100%;
         height: 2px;
-        background-color:  #3391C5;
+        background-color: #3391C5;
         transition-duration: 1s;
     }
 
@@ -367,28 +431,30 @@
         background-color: #CFD8DC;
     }
 
-    .catalogBurgerInner{
+    .catalogBurgerInner {
         display: flex;
         flex-direction: column;
 
     }
-    .menu__box{
+
+    .menu__box {
         padding: 20px;
     }
-    .menu__box ul{
+
+    .menu__box ul {
         list-style: none;
         padding: 0;
-        
+
     }
 
-    .menu__box .info{
+    .menu__box .info {
         display: flex;
         flex-direction: column;
         align-items: start;
     }
 
 
-    .bd-links li{
+    .bd-links li {
         font-family: var(--second-family);
         font-weight: 400;
         font-size: 18px;
@@ -399,12 +465,12 @@
     }
 
 
-    .bd-links li a{
+    .bd-links li a {
         text-decoration: none;
         color: #1a1a18;
     }
 
-    .collapseEl a{
+    .collapseEl a {
         margin-left: 20px;
         width: 80%;
         font-family: var(--second-family);
@@ -413,12 +479,12 @@
         line-height: 129%;
         color: #1a1a18;
         text-transform: uppercase;
-        
+
     }
 
     /* бургер меню */
     /* subheader */
-    .subheaderInfo ul{
+    .subheaderInfo ul {
         font-family: var(--font-family);
         font-weight: 400;
         font-size: 20px;
@@ -428,10 +494,12 @@
     .catalog {
         margin-top: 100px;
     }
-    .catalogItems{
+
+    .catalogItems {
         gap: 30px;
     }
-    .choice{
+
+    .choice {
         width: 60vh;
         font-size: 16px;
     }
@@ -464,35 +532,88 @@
         font-size: 14px;
     }
 
-    .infoMain{
+    .infoMain {
         display: flex;
         flex-direction: column-reverse;
         height: 900px;
         width: 100%;
         align-items: center;
     }
-    .infoText{
+
+    .infoText {
         width: 100%;
     }
-    .infoText h3{
+
+    .infoText h3 {
         font-size: 70px;
     }
 
-    .infoText p{
+    .infoText p {
         font-size: 16px;
     }
-    .infoImg{
+
+    .infoImg {
         width: 100%;
+    }
+
+
+    /* brand.html */
+    .main{
+        margin-top: 150px;
+    }
+
+    .brandBanner {
+        height: 170px;
+    }
+
+    .brandLogo {
+        height: 140px;
+    }
+
+    .brandLogo img {
+        height: 140px;
+        width: 230px;
+    }
+
+    .brandInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brandInfo h1 {
+        font-size: 64px;
+    }
+
+    .brandInfo h2 {
+        font-size: 22px;
+    }
+    .catalogBrand{
+        margin-top: 40px;
+    }
+
+    .catalogBrandItem {
+        height: 170px;
+
+    }
+
+    .catalogBrandItemTitle {
+        font-size: 20px;
+    }
+
+    .catalogBrandItemImg {
+        width: 150px;
+        height: 150px;
     }
 }
 
 @media (max-width: 900px) {
-    .subheader{
+    .subheader {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 100px;
-    
+
     }
 
     .product_bg {
@@ -518,23 +639,23 @@
         position: relative;
     }
 
-    .subheaderInfo h3{
+    .subheaderInfo h3 {
         text-align: center;
     }
 
-    .subheaderImage{
+    .subheaderImage {
         position: relative;
         bottom: 30px;
     }
 
-    .subheader:after{
+    .subheader:after {
         content: '';
         position: absolute;
         left: 0px;
         right: 0px;
         height: 30%;
         bottom: 0px;
-        background:  linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, #f5f5f5 100%);
+        background: linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, #f5f5f5 100%);
         pointer-events: none;
     }
 
@@ -547,26 +668,69 @@
     }
 
     /* catalog */
-    .catalogItems{
+    .catalogItems {
         gap: 10px;
     }
+
     .emptyEl {
         display: none;
         width: 240px;
         min-height: 300px;
     }
 
-    
+    /* brand.html */
+
+
+    .brandBanner {
+        height: 170px;
+    }
+
+    .brandLogo {
+        height: 140px;
+    }
+
+    .brandLogo img {
+        height: 140px;
+        width: 230px;
+    }
+
+    .brandInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brandInfo h1 {
+        font-size: 64px;
+    }
+
+    .brandInfo h2 {
+        font-size: 22px;
+    }
+
+    .catalogBrandItem {
+        height: 160px;
+
+    }
+
+    .catalogBrandItemTitle {
+        font-size: 20px;
+    }
+
+    .catalogBrandItemImg {
+        width: 140px;
+        height: 140px;
+    }
 
 }
 
 @media (max-width: 800px) {
-    .catalogItems{
+    .catalogItems {
         justify-content: center;
         gap: 30px;
     }
 
-    .choice{
+    .choice {
         width: 60vh;
         font-size: 14px;
     }
@@ -575,6 +739,7 @@
         width: 240px;
         min-height: 300px;
     }
+
     .catalogItemImg img {
         width: 220px;
         height: 140px;
@@ -586,7 +751,56 @@
         min-height: 300px;
     }
 
-   
+    /* brand.html */
+
+
+    .brandBanner {
+        height: 170px;
+    }
+
+    .brandLogo {
+        height: 140px;
+    }
+
+    .brandLogo img {
+        height: 140px;
+        width: 230px;
+    }
+
+    .brandInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brandInfo h1 {
+        font-size: 40px;
+    }
+
+    .brandInfo h2 {
+        font-size: 16px;
+    }
+
+    .catalogBrandItems {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .catalogBrandItem {
+        height: 170px;
+        width: 100%;
+
+    }
+
+    .catalogBrandItemTitle {
+        font-size: 20px;
+    }
+
+    .catalogBrandItemImg {
+        width: 150px;
+        height: 150px;
+    }
+
 }
 
 
@@ -598,19 +812,20 @@
     .headerList {
         display: none;
     }
+
     /* subheader */
     .subheaderImage img {
         height: 50vh;
     }
 
-    .subheader{
+    .subheader {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         height: 100vh;
-      
-    
+
+
     }
 
     .product_bg {
@@ -635,12 +850,12 @@
         position: relative;
     }
 
-    .subheaderInfo h3{
+    .subheaderInfo h3 {
         text-align: center;
     }
 
     /* catalog */
-    .catalogItems{
+    .catalogItems {
         justify-content: center;
         gap: 10px;
     }
@@ -649,6 +864,7 @@
         width: 200px;
         min-height: 300px;
     }
+
     .catalogItemImg img {
         width: 180px;
         height: 120px;
@@ -658,23 +874,39 @@
         width: 240px;
         min-height: 300px;
     }
+
+    .catalogBrand{
+        margin-top: 20px;
+    }
 }
 
+
+@media(width < 550px){
+    .brandBanner{
+        flex-direction: column-reverse;
+        padding: 10px;
+        height: 100%;
+    }
+    .main{
+        margin-top: 120px;
+    }
+}
 @media (width < 480px) {
-    .header{
+    .header {
         margin-top: 10px;
     }
 
-    .subheader{
+    .subheader {
         margin-bottom: 70px;
     }
 
-   
-    .subheaderInfo{
+
+    .subheaderInfo {
         height: 50vh;
         justify-content: space-evenly;
     }
-    .subheaderInfo ul{
+
+    .subheaderInfo ul {
         margin-top: 10px;
         font-family: var(--second-family);
         font-weight: 400;
@@ -683,51 +915,53 @@
         text-align: center;
         color: #1a1a18;
     }
-    .subheaderInfo h3{
+
+    .subheaderInfo h3 {
         font-family: var(--second-family);
         font-weight: 500;
         font-size: 18px;
     }
 
-    .buttonInfo button{
+    .buttonInfo button {
         margin-top: 30px;
     }
-    .subheaderInfo h1{
+
+    .subheaderInfo h1 {
         font-family: var(--third-family);
         font-weight: 700;
         font-size: 37px;
-        line-height: 122%; 
+        line-height: 122%;
     }
 
-    .subheaderInfo ul{
+    .subheaderInfo ul {
         list-style: none;
         font-weight: 400;
         font-size: 16px;
         line-height: 112%;
     }
 
-    .buttonInfo button{
+    .buttonInfo button {
         width: 235px;
         height: 55px;
     }
-  
-    .subheaderImage{
+
+    .subheaderImage {
         display: flex;
         justify-content: center;
         align-items: start;
     }
 
-    .subheaderImage img{
+    .subheaderImage img {
         width: 20vh;
         height: 30vh;
         margin-bottom: 2px;
     }
 
-    .catalog h2{
+    .catalog h2 {
         font-size: 37px;
     }
 
-    .choice{
+    .choice {
         font-size: 16px;
         width: 95vw;
         height: 50px;
@@ -737,54 +971,57 @@
         text-align: center;
     }
 
-    .choice button{
+    .choice button {
         height: 60px;
     }
 
-    .catalogItems{
+    .catalogItems {
         margin-top: 30px;
     }
-    .catalogItem{
+
+    .catalogItem {
         width: 300px;
     }
 
-    .catalogItemImg{
+    .catalogItemImg {
         width: 260px;
         height: 180px;
     }
 
-    .infoMain{
+    .infoMain {
         min-height: 900px;
     }
-    .infoText h3{
+
+    .infoText h3 {
         font-family: var(--third-family);
         font-weight: 700;
         font-size: 33px;
         line-height: 121%;
         margin-top: 0;
     }
-    .infoText p{
+
+    .infoText p {
         font-weight: 400;
         font-size: 16px;
     }
 
-    .infoImg{
+    .infoImg {
         width: 100%;
     }
 
-    .infoImg img{
+    .infoImg img {
         width: 100%;
     }
 
-    .place h2{
+    .place h2 {
         font-family: var(--third-family);
         font-weight: 700;
         font-size: 37px;
         line-height: 108%;
-        
+
     }
 
-    .place p{
+    .place p {
         width: 100%;
         font-family: var(--font-family);
         font-weight: 400;
@@ -792,91 +1029,114 @@
         color: #1a1a18;
     }
 
-    .map{
+    .map {
         height: 300px;
     }
 
-    .footerInner{
+    .footerInner {
         padding: 20px;
         margin-bottom: 0;
     }
-    .footerLogo{
+
+    .footerLogo {
         width: 100%;
     }
-    .footerLogoText{
+
+    .footerLogoText {
         width: 290px;
         margin-bottom: 30px;
     }
 
-    .footerData{
+    .footerData {
         display: flex;
         width: 100%;
     }
 
-    .footerDataEls ul{
+    .footerDataEls ul {
         list-style: none;
     }
 
-    .formButton{
+    .formButton {
         left: 85vw;
         top: 85vh;
         height: 50px;
         width: 50px;
     }
 
-    .formButtonChoice{
+    .formButtonChoice {
         height: 50px;
         width: 50px;
     }
 
-    .formButton{
+    .formButton {
         left: 80vw;
         top: 75vh;
     }
 
-    .formButtonOptions{
+    .formButtonOptions {
         width: 60px;
         height: 180px;
     }
 
-    .formButtonEmail{
+    .formButtonEmail {
         width: 50px;
         height: 50px;
     }
 
-    .formButtonCall{
+    .formButtonCall {
         width: 50px;
         height: 50px;
     }
 
-    .formButtonClose{
+    .formButtonClose {
         width: 50px;
         height: 50px;
     }
 
-    .modal{
+    .modal {
         margin-top: 80px;
     }
 
     .modal-header {
         padding: 5px;
     }
-    .modal-title{
+
+    .modal-title {
         font-family: var(--third-family);
         font-weight: 700;
         font-size: 25px;
         line-height: 160%;
     }
 
-    .btn-close{
+    .btn-close {
         position: absolute;
         right: 20px;
         top: 20px;
     }
 
-    /* .form-floating>.form-control{
+    /* brand.html */
+    .catalogBrand{
+        margin-top: 20px;
+    }
+    .catalogBrandItems {
+        display: flex;
+        flex-direction: column;
+    }
 
-    } */
+    .catalogBrandItem {
+        height: 130px;
+        width: 100%;
+
+    }
+
+    .catalogBrandItemTitle {
+        font-size: 20px;
+    }
+
+    .catalogBrandItemImg {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @media (width < 320px) {

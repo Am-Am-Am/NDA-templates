@@ -754,6 +754,9 @@ li .active {
 
 
 /* стили для brand.html */
+.main{
+    margin-top: 230px;
+}
 .breadCrumbs {
     font-family: var(--font-family);
     font-weight: 500;
@@ -817,16 +820,29 @@ li .active {
     
 }
 
+.catalogBrandItems a{
+    text-decoration: none;
+    color: #1a1a18;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
 .catalogBrandItem{
     border-radius: 10px;
     width: calc(50% - 20px);
-    height: 240px;
+    height: 230px;
     background: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-   
+    
+    border-right: 10px solid #fff;
+    border-radius: 10px;
+}
+
+.catalogBrandItem:hover{
+    background: #328dc0;
+    border-right: 10px solid #242e49;
+    color: #fff;
 }
 
 .catalogBrandItemImg{
@@ -847,9 +863,10 @@ li .active {
     font-weight: 500;
     font-size: 30px;
     line-height: 117%;
-    color: #1a1a18;
     width: 60%;
 }
+
+
 
 /* стили для product.html */
 /* слайдер */
