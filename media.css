@@ -399,8 +399,12 @@
         list-style: none;
         background-color: #F5F5F5;
         transition-duration: .75s;
-
-    }
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
 
 
     .bd-links .btn1[aria-expanded="true"]::after {
