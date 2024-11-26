@@ -621,7 +621,6 @@ li .active {
     background-image: url('images/footerBg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 80px;
 }
 
 .footerInfo {
@@ -874,22 +873,22 @@ li .active {
 .productHead {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    gap: 40px;
 }
 
 .productCarousel {
     z-index: 1;
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
-    width: 44vw;
+    width: 49vw;
 
 }
 
 .bx-wrapper {
     z-index: 1;
     border-radius: 15px;
-    width: 44vw;
+    width: 49vw;
     height: 700px;
     box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.15);
     background: #fff;
@@ -897,6 +896,7 @@ li .active {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    border: 0;
 }
 
 

@@ -119,6 +119,13 @@
 
     /* product.html */
 
+    .productTitleText h3{
+        font-size: 28px;
+    }
+
+    .productTitleText h2{
+        font-size: 86px;
+    }
 
     /* brand.html */
     .main{
@@ -250,6 +257,41 @@
     }
 
     .infoText p {
+        font-size: 16px;
+    }
+
+
+    /* product.html */
+    .bx-wrapper{
+        height: 530px;
+    }
+
+    .slider-nav{
+        height: 150px;
+    }
+
+    .productTitle{
+     height: 700px;   
+     padding: 20px;
+    }
+
+    .productTitleText h3{
+        font-size: 20px;
+    }
+
+    .productTitleText h2{
+        font-family: var(--third-family);
+        font-weight: 700;
+        font-size: 60px;
+    }
+
+    .productTitleText p{
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .productTitleText ul{
         font-size: 16px;
     }
 
