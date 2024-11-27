@@ -1,3 +1,28 @@
+@media (max-width: 1820px) {
+    .ContactAddress {
+        width: 450px;
+    }
+
+    .addressInfo h3 {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #1a1a18;
+        margin-bottom: 20px;
+    }
+
+
+    .addressInfo p {
+        font-size: 16px;
+    }
+
+    
+}
+
+
+
 @media (max-width: 1440px) {
     .el {
         font-size: 16px;
@@ -119,16 +144,16 @@
 
     /* product.html */
 
-    .productTitleText h3{
+    .productTitleText h3 {
         font-size: 28px;
     }
 
-    .productTitleText h2{
+    .productTitleText h2 {
         font-size: 86px;
     }
 
     /* brand.html */
-    .main{
+    .main {
         margin-top: 200px;
     }
 
@@ -168,6 +193,34 @@
         width: 190px;
         height: 190px;
     }
+
+    /* contacts.html */
+    .contactsMap {
+        height: 550px;
+    }
+
+    .addresses{
+        gap: 15px;
+        height: 900px;
+        flex-wrap: wrap;
+    }
+
+    .ContactAddress {
+        height: 440px;
+        width: 49%;
+        padding: 20px;
+    }
+
+  
+    .mainAddress{
+        width: 100%;
+    }    
+
+    .applicationText h3{
+        font-size: 86px;
+    }
+
+    /* contacts.html */
 
 }
 
@@ -262,41 +315,41 @@
 
 
     /* product.html */
-    .bx-wrapper{
+    .bx-wrapper {
         height: 530px;
     }
 
-    .slider-nav{
+    .slider-nav {
         height: 150px;
     }
 
-    .productTitle{
-     height: 700px;   
-     padding: 20px;
+    .productTitle {
+        height: 700px;
+        padding: 20px;
     }
 
-    .productTitleText h3{
+    .productTitleText h3 {
         font-size: 20px;
     }
 
-    .productTitleText h2{
+    .productTitleText h2 {
         font-family: var(--third-family);
         font-weight: 700;
         font-size: 60px;
     }
 
-    .productTitleText p{
+    .productTitleText p {
         font-family: var(--font-family);
         font-weight: 500;
         font-size: 16px;
     }
 
-    .productTitleText ul{
+    .productTitleText ul {
         font-size: 16px;
     }
 
     /* brand.html */
-    .main{
+    .main {
         margin-top: 180px;
     }
 
@@ -310,6 +363,17 @@
         width: 180px;
         height: 180px;
     }
+
+    /* contacts.html */
+    .contactsMap {
+        height: 500px;
+    }
+
+
+    .applicationText h3{
+        font-size: 82px;
+    }
+    /* contacts.html */
 
 
 }
@@ -446,7 +510,7 @@
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-}
+    }
 
 
     .bd-links .btn1[aria-expanded="true"]::after {
@@ -604,7 +668,7 @@
 
 
     /* brand.html */
-    .main{
+    .main {
         margin-top: 150px;
     }
 
@@ -634,7 +698,8 @@
     .brandInfo h2 {
         font-size: 22px;
     }
-    .catalogBrand{
+
+    .catalogBrand {
         margin-top: 40px;
     }
 
@@ -651,6 +716,22 @@
         width: 150px;
         height: 150px;
     }
+
+
+    /* contacts.html */
+    .contactsMap {
+        height: 450px;
+    }
+
+    .applicationText h3{
+        font-size: 60px;
+    }
+
+    .applicationText p{
+        font-size: 20px;
+    }
+
+    /* contacts.html */
 }
 
 @media (max-width: 900px) {
@@ -768,6 +849,48 @@
         height: 140px;
     }
 
+     /* contacts.html */
+     .contactsMap {
+        height: 550px;
+    }
+
+
+    .addresses{
+        gap: 15px;
+        height: 1400px;
+        flex-wrap: wrap;
+    }
+
+    .ContactAddress {
+        height: 450px;
+        width: 100%;
+        padding: 20px;
+    }
+
+  
+    .mainAddress{
+        width: 100%;
+    }    
+
+    .application{
+        height: 700px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .applicationText{
+        width: 80%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .applicationForm{
+        width: 80%;
+    }
+    /* contacts.html */
+
 }
 
 @media (max-width: 800px) {
@@ -847,6 +970,13 @@
         height: 150px;
     }
 
+
+    /* contacts.html */
+    .contactsMap {
+        display: none;
+    }
+
+    /* contacts.html */
 }
 
 
@@ -921,22 +1051,62 @@
         min-height: 300px;
     }
 
-    .catalogBrand{
+    .catalogBrand {
         margin-top: 20px;
+    }
+
+
+
+    /* contacts.html */
+
+    .addresses{
+        height: 1600px;
+    }
+    .ContactAddress {
+        height: 520px;
+    }
+
+    .application{
+        height: 700px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 40px;
+    }
+
+    .applicationText h3{
+        font-size: 60px;
+    }
+
+    .applicationText{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .applicationForm{
+        width: 100%;
+    }
+
+    .applicationForm p{
+        font-size: 16px;
     }
 }
 
 
-@media(width < 550px){
-    .brandBanner{
+@media(width < 550px) {
+    .brandBanner {
         flex-direction: column-reverse;
         padding: 10px;
         height: 100%;
     }
-    .main{
+
+    .main {
         margin-top: 120px;
     }
 }
+
 @media (width < 480px) {
     .header {
         margin-top: 10px;
@@ -1161,9 +1331,10 @@
     }
 
     /* brand.html */
-    .catalogBrand{
+    .catalogBrand {
         margin-top: 20px;
     }
+
     .catalogBrandItems {
         display: flex;
         flex-direction: column;
