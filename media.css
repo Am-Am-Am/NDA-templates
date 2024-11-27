@@ -773,6 +773,23 @@
     }
 
     /* 404.html */
+
+    /* certificatesInternalPage.html */
+
+
+    .certificatesTable .table th {
+        font-size: 20px;
+    }
+
+    .certificatesTable .table td {
+        font-size: 16px;
+    }
+
+
+
+
+    /* certificatesInternalPage.html */
+
 }
 
 @media (max-width: 900px) {
@@ -934,12 +951,13 @@
     /* contacts.html */
 
     /* 404.html */
-    .notFoundContent{
+    .notFoundContent {
         flex-wrap: wrap;
         height: 100%;
         justify-content: center;
         align-items: center;
     }
+
     .notFoundContentTitle h1 {
         font-size: 220px;
     }
@@ -952,10 +970,26 @@
         margin-top: 40px;
         height: 30vh;
         width: 100%;
-        
+
     }
 
     /* 404.html */
+
+    /* certificatesInternalPage.html */
+
+
+    .certificatesTable .table th {
+        font-size: 18px;
+    }
+
+    .certificatesTable .table td {
+        font-size: 14px;
+    }
+
+
+
+
+    /* certificatesInternalPage.html */
 
 }
 
@@ -1043,6 +1077,24 @@
     }
 
     /* contacts.html */
+
+    /* certificatesInternalPage.html */
+
+
+    .certificatesTable .table th {
+        font-size: 16px;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    .certificatesTable .table td {
+        font-size: 12px;
+    }
+
+
+
+
+    /* certificatesInternalPage.html */
 }
 
 
@@ -1168,7 +1220,29 @@
     .notFoundContentTitle p {
         font-size: 20px;
     }
+
     /* 404.html */
+
+
+    /* certificatesInternalPage.html */
+
+
+    .certificatesTable .table th {
+        padding: 4px;
+        font-size: 12px;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    .certificatesTable .table td {
+        font-size: 10px;
+        padding: 4px;
+    }
+
+
+
+
+    /* certificatesInternalPage.html */
 }
 
 
@@ -1182,6 +1256,27 @@
     .main {
         margin-top: 120px;
     }
+
+
+    /* certificatesInternalPage.html */
+
+
+    .certificatesTable .table th {
+        padding: 2px;
+        font-size: 12px;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    .certificatesTable .table td {
+        font-size: 10px;
+        padding: 2px;
+    }
+
+
+
+
+    /* certificatesInternalPage.html */
 }
 
 @media (width < 480px) {

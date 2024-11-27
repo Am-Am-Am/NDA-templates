@@ -1813,3 +1813,43 @@ input .form-control .d-inline-block {
 }
 
 /* 404.html */
+
+/* certificatesInternalPage.html */
+.certificatesTable{
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.15);
+    background: #fff;
+}
+
+.certificatesTable table {
+    width: 100%; 
+    table-layout: fixed; 
+}
+
+.certificatesTable thead{
+    margin-bottom: 30px;
+}
+
+.certificatesTable th, .certificatesTable td {
+  
+    overflow-wrap: break-word;
+}
+
+.certificatesTable th:first-child, .certificatesTable td:first-child {
+    width: 5%; 
+}
+
+.certificatesTable th:nth-child(2), .certificatesTable td:nth-child(2) {
+    width: 60%; 
+}
+
+.certificatesTable th:nth-child(3), .certificatesTable td:nth-child(3),
+.certificatesTable th:nth-child(4), .certificatesTable td:nth-child(4) {
+    width: 17.5%; 
+}
+
+
+
+
+/* certificatesInternalPage.html */
