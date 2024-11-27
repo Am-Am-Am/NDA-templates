@@ -1,17 +1,15 @@
-@font-face {
-    font-family: Futura PT;
-    src: url('fonts/FuturaPT-Book.ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
-    font-family: Reznor;
+    font-family: 'Reznor';
     src: url('fonts/reznor-broken.ttf');
 }
 
 
 :root {
-    --font-family: Futura PT, sans-serif;
-    --second-family: Reznor, sans-serif;
+    --font-family: "Jost", sans-serif;
+    --second-family: 'Reznor', sans-serif;
+    --third-family: "Roboto", sans-serif;
 }
 
 body {
@@ -1602,3 +1600,151 @@ input .form-control .d-inline-block {
 
 /* кастомная кнопка выбора файла */
 /* работа с формами */
+
+
+/* contacts.html */
+.contactsBanner{
+    background: #e6f0f8;
+}
+
+
+.contactsMap{
+    margin-top: 55px;
+    border-radius: 15px;
+    height: 600px;
+    border-radius: 15px;
+    display: flex;
+    background-size: contain;
+    box-shadow: 0 0 60px 15px rgba(0, 0, 0, 0.45);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*opacity: 0.8;
+    */filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+  
+}
+
+.contactsMap iframe{
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.addresses{
+    margin-top: 40px;
+    width: 100%;
+    height: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ContactAddress{
+    background: #fff;
+    border-radius: 20px;
+    width: 560px;
+    height: 480px;
+    padding: 30px;
+}
+
+.addressInfo h3{
+    margin-top: 40px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #1a1a18;
+    margin-bottom: 20px;
+}
+
+.addressInfo p{
+    margin-top: 20px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: #1a1a18;
+}
+
+.addressInfoEl{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: start;
+}
+
+.addressInfoElText{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: #1a1a18;
+    margin-bottom: 20px;
+}
+
+.addressInfoElText a{
+    text-decoration: none;
+    color: #1a1a18;
+}
+
+.application{
+    border-radius: 20px;
+    height: 426px;
+    width: 100%;
+    background: #e6f0f8;
+    margin-top: 40px;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.applicationText{
+    width: 40%;
+}
+
+.applicationText h3{
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 89%;
+    color: #1a1a18;
+}
+
+.applicationText p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: #1a1a18;
+}
+
+.applicationForm{
+    width: 40%;
+}
+
+.applicationForm a{
+    color: #1b1b1d;
+}
+
+.applicationForm button{
+    margin-bottom: 10px;
+}
+
+.applicationForm .form-floating{
+    margin-bottom: 20px;
+   
+}
+
+.applicationForm .form-control{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: #b7b7b7;
+    background-color: #FFFFFF;
+    box-shadow: none;
+}
+
+
+/* contacts.html */
