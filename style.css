@@ -1494,6 +1494,9 @@ input .form-control .d-inline-block {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn:hover {
@@ -1748,3 +1751,65 @@ input .form-control .d-inline-block {
 
 
 /* contacts.html */
+
+/* 404.html */
+.body{
+    background-color: #E6F0F8;
+    height: 100vh;
+}
+
+.main .main404{
+    margin-top: 0;
+}
+
+.notFoundContent{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+}
+.notFoundContentTitle{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+.notFoundContentTitle h1{
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 300px;
+    line-height: 33%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1a1a18;
+    margin-bottom: 80px;
+}
+.notFoundContentTitle p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+    color: #1a1a18;
+    width: 70%;
+}
+
+.notFoundContentTitle a{
+    text-decoration: none;
+    white-space: nowrap;
+}
+.nonFoundContentImage{
+    margin-top: 100px;
+    width: 50%;
+    height: 80%;
+    background-image: url('images/404/notFound.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 404.html */

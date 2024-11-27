@@ -18,7 +18,7 @@
         font-size: 16px;
     }
 
-    
+
 }
 
 
@@ -199,7 +199,7 @@
         height: 550px;
     }
 
-    .addresses{
+    .addresses {
         gap: 15px;
         height: 900px;
         flex-wrap: wrap;
@@ -211,16 +211,27 @@
         padding: 20px;
     }
 
-  
-    .mainAddress{
-        width: 100%;
-    }    
 
-    .applicationText h3{
+    .mainAddress {
+        width: 100%;
+    }
+
+    .applicationText h3 {
         font-size: 86px;
     }
 
     /* contacts.html */
+
+    /* 404.html */
+    .notFoundContentTitle h1 {
+        font-size: 280px;
+    }
+
+    .notFoundContentTitle p {
+        font-size: 30px;
+    }
+
+    /* 404.html */
 
 }
 
@@ -370,10 +381,24 @@
     }
 
 
-    .applicationText h3{
+    .applicationText h3 {
         font-size: 82px;
     }
+
     /* contacts.html */
+
+
+    /* 404.html */
+    .notFoundContentTitle h1 {
+        font-size: 220px;
+    }
+
+    .notFoundContentTitle p {
+        font-size: 25px;
+    }
+
+    /* 404.html */
+
 
 
 }
@@ -723,15 +748,31 @@
         height: 450px;
     }
 
-    .applicationText h3{
+    .applicationText h3 {
         font-size: 60px;
     }
 
-    .applicationText p{
+    .applicationText p {
         font-size: 20px;
     }
 
     /* contacts.html */
+
+
+    /* 404.html */
+    .notFoundContentTitle h1 {
+        font-size: 220px;
+    }
+
+    .notFoundContentTitle p {
+        font-size: 25px;
+    }
+
+    .nonFoundContentImage {
+        width: 100%;
+    }
+
+    /* 404.html */
 }
 
 @media (max-width: 900px) {
@@ -849,13 +890,13 @@
         height: 140px;
     }
 
-     /* contacts.html */
-     .contactsMap {
+    /* contacts.html */
+    .contactsMap {
         height: 550px;
     }
 
 
-    .addresses{
+    .addresses {
         gap: 15px;
         height: 1400px;
         flex-wrap: wrap;
@@ -867,12 +908,12 @@
         padding: 20px;
     }
 
-  
-    .mainAddress{
-        width: 100%;
-    }    
 
-    .application{
+    .mainAddress {
+        width: 100%;
+    }
+
+    .application {
         height: 700px;
         flex-direction: column;
         align-items: center;
@@ -880,16 +921,41 @@
         width: 100%;
     }
 
-    .applicationText{
+    .applicationText {
         width: 80%;
         text-align: center;
         margin-bottom: 50px;
     }
 
-    .applicationForm{
+    .applicationForm {
         width: 80%;
     }
+
     /* contacts.html */
+
+    /* 404.html */
+    .notFoundContent{
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .notFoundContentTitle h1 {
+        font-size: 220px;
+    }
+
+    .notFoundContentTitle p {
+        font-size: 25px;
+    }
+
+    .nonFoundContentImage {
+        margin-top: 40px;
+        height: 30vh;
+        width: 100%;
+        
+    }
+
+    /* 404.html */
 
 }
 
@@ -1059,14 +1125,15 @@
 
     /* contacts.html */
 
-    .addresses{
+    .addresses {
         height: 1600px;
     }
+
     .ContactAddress {
         height: 520px;
     }
 
-    .application{
+    .application {
         height: 700px;
         flex-direction: column;
         align-items: center;
@@ -1075,23 +1142,33 @@
         padding: 40px;
     }
 
-    .applicationText h3{
+    .applicationText h3 {
         font-size: 60px;
     }
 
-    .applicationText{
+    .applicationText {
         width: 100%;
         text-align: center;
         margin-bottom: 50px;
     }
 
-    .applicationForm{
+    .applicationForm {
         width: 100%;
     }
 
-    .applicationForm p{
+    .applicationForm p {
         font-size: 16px;
     }
+
+    /* 404.html */
+    .notFoundContentTitle h1 {
+        font-size: 150px;
+    }
+
+    .notFoundContentTitle p {
+        font-size: 20px;
+    }
+    /* 404.html */
 }
 
 
