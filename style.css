@@ -42,7 +42,9 @@ header {
 
 }
 
-
+.main1{
+    margin-top: 100px;
+}
 
 
 .header {
@@ -871,8 +873,9 @@ li .active {
 .productHead {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 40px;
+    margin-top: 40px;
+    height: 100vh;
 }
 
 .productCarousel {
@@ -883,49 +886,32 @@ li .active {
 
 }
 
-.bx-wrapper {
-    z-index: 1;
-    border-radius: 15px;
-    width: 49vw;
-    height: 700px;
+.slick-initialized .slick-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-nav{
+    margin-top: 15px;
+}
+
+.slider-nav div{
+    width: 100%;
+}
+
+.sliderContainer{
     box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.15);
     background: #fff;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    border: 0;
-}
-
-
-.slider div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slider-nav>div {
-    border: 3px solid red;
-
-}
-
-.slider-nav>div a {
-    display: block;
-    cursor: pointer;
-}
-
-.slider-nav>a.active>div {
-    /* border-bottom: 3px solid #c21414; */
-    border: 1px solid #3391c5;
     border-radius: 15px;
-}
-
-
-.slider-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-
+    padding: 20px;
+    height: 600px;
 }
 
 .slider-nav img {
@@ -933,20 +919,85 @@ li .active {
     display: block;
 }
 
-.slider-nav div {
-    box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.15);
+.sliderNavEl {
     background: #fff;
-    border-radius: 15px;
     width: 150px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-size: 150px 150px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    height: 300px; /* Задаем фиксированную ширину для миниатюр */
+      margin: 0 10px;
+  }
+
+.slider-nav {
+    display: flex; /* Используем Flexbox для размещения миниатюр в строку */
+    justify-content: center; /* Центрирование всех элементов */
 }
 
-.bx-wrapper .bx-caption {
-    background: #006ea9;
+
+.slick-current{
+    border: 1px solid #3391C5;
 }
+
+
+.slider-container {
+    position: relative; /* Создаем относительное позиционирование для контейнера */
+}
+
+.slider-arrows {
+    display: flex; /* Используем Flexbox для лучшего управления */
+    justify-content: center; /* Выравниваем кнопки по центру */
+    gap: 10px; /* Промежуток между кнопками */
+    margin-bottom: 20px;
+}
+
+.slick-prev, .slick-next {
+    background-color: rgba(255, 255, 255, 0.8); /* Пример фона */
+    border: none; /* Убираем границу */
+    padding: 10px; /* Отступы для кнопки */
+    cursor: pointer; /* Указываем на возможность клика */
+    border-radius: 5px; /* Скругление углов */
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background-color: rgba(255, 255, 255, 1); /* Изменение фона при наведении */
+}
+
+.slick-prev1{
+    box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.15);
+    background: #fff;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    background-image: url('images/products/arrowLeft.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #FFFFFF;
+}
+
+.slick-prev1:active{
+    border: 1px solid #3391C5;
+}
+
+.slick-next1{
+    box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.15);
+    background: #fff;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    background-image: url('images/products/arrowRight.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #FFFFFF;
+}
+
+.slick-next1:active{
+    border: 1px solid #3391C5;
+}
+ 
 
 .productTitle {
     width: 44vw;
@@ -1057,14 +1108,23 @@ li .active {
     margin-top: 120px;
 }
 
-.productInfoChoice ul {
-    width: 805px;
+
+.productInfoChoice{
     display: flex;
-    justify-content: space-between;
+    
+}
+.productInfoChoice ul {
+    display: flex;
     align-items: center;
-    box-shadow: 0 -3px 40px 3px rgba(0, 0, 0, 0.25);
+    
     background-color: #FFFFFF;
     border-radius: 10px;
+}
+
+.productTabContent{
+    background-color: #fff;
+    box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.15);
+    
 }
 
 .nav-pills .nav-link.active {
@@ -1301,6 +1361,7 @@ input .form-control .d-inline-block {
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
+    z-index: 9999;
 }
 
 .flex {
@@ -1385,7 +1446,7 @@ input .form-control .d-inline-block {
 }
 
 .orderName {
-    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.15);
     background: #f5f5f5;
     height: 60px;
     border-radius: 10px;
@@ -1400,7 +1461,7 @@ input .form-control .d-inline-block {
 }
 
 .orderCount {
-    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.15);
     background: #f5f5f5;
     border-radius: 10px;
     width: 60px;
@@ -1440,6 +1501,12 @@ input .form-control .d-inline-block {
     width: 80vw;
 }
 
+.btn-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
 .physicalForm {
     display: flex;
 }
@@ -1459,6 +1526,7 @@ input .form-control .d-inline-block {
     display: flex;
     justify-content: center;
     margin: auto;
+    flex-wrap: nowrap;
 }
 
 .nav .nav-tabs {
@@ -1481,6 +1549,21 @@ input .form-control .d-inline-block {
 }
 
 
+.nav-tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background-color: #3391c5;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.nav-tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+    color: black;
+}
 
 .btn {
     background-color: #3391C5;

@@ -69,6 +69,9 @@
         width: 100px;
     }
 
+    .rightSideInner{
+        justify-content: space-evenly;
+    }
 
 
     /* subheader */
@@ -233,6 +236,11 @@
 
     /* 404.html */
 
+    /* product.html */
+
+
+
+    /* product.html */
 }
 
 
@@ -400,6 +408,70 @@
     /* 404.html */
 
 
+    /* product.html */
+    .productHead {
+        height: 80vh;
+        width: 100%;
+    }
+
+    .productTitle {
+        height: auto;
+    }
+
+    .productCarousel {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .sliderNavEl {
+        background: #fff;
+        width: 200px;
+        background-size: 150px 150px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        height: 200px;
+        /* Задаем фиксированную ширину для миниатюр */
+        margin: 0 10px;
+    }
+
+
+    .sliderContainer {
+        height: 700px;
+    }
+
+    .slider-nav img {
+        height: 120px;
+    }
+
+    .sliderImg {
+        height: 520px;
+    }
+
+    .slider-nav {
+        height: 200px;
+    }
+
+    .slider-arrows {
+        margin-top: 60px;
+    }
+
+    .linkContacts {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .linkContactsEl {
+        width: 300px;
+    }
 
 }
 
@@ -785,10 +857,74 @@
         font-size: 16px;
     }
 
-
-
-
     /* certificatesInternalPage.html */
+
+    /* product.html */
+    .productHead {
+        height: 80vh;
+        width: 100%;
+    }
+
+    .productTitle {
+        height: auto;
+    }
+
+    .productCarousel {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .sliderNavEl {
+        background: #fff;
+        width: 200px;
+        background-size: 150px 150px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        height: 200px;
+        /* Задаем фиксированную ширину для миниатюр */
+        margin: 0 10px;
+    }
+
+
+    .sliderContainer {
+        height: 700px;
+    }
+
+    .slider-nav img {
+        height: 120px;
+    }
+
+    .sliderImg {
+        height: 520px;
+    }
+
+    .slider-nav {
+        height: 200px;
+    }
+
+    .slider-arrows {
+        margin-top: 60px;
+    }
+
+    .linkContacts {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .linkContactsEl {
+        width: 300px;
+    }
+
+    /* product.html */
 
 }
 
@@ -991,6 +1127,184 @@
 
     /* certificatesInternalPage.html */
 
+    /* product.html */
+
+    .nav .nav-tabs {
+        flex-wrap: nowrap;
+    }
+
+    .countItems {
+        padding: 5px;
+    }
+
+    .countText {
+        font-size: 14px;
+    }
+
+    .orderButton {
+        font-size: 18px;
+    }
+
+    .sliderNavEl {
+        background: #fff;
+        width: 100px;
+        background-size: 150px 150px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        height: 100px;
+        /* Задаем фиксированную ширину для миниатюр */
+        margin: 0 10px;
+    }
+
+    .slider-nav img {
+        height: 50px;
+    }
+
+    .sliderImg {
+        height: 220px;
+    }
+
+    .slider-arrows {
+        margin-top: 10px;
+    }
+
+    .sliderContainer {
+        height: auto;
+    }
+
+    .physicalForm {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+
+    .modal-content {
+        margin-bottom: 100px;
+    }
+
+    .listOrders {
+        width: 100%;
+    }
+
+    .formEl {
+        width: 100%;
+        font-size: 12px;
+    }
+
+
+    /* product.html */
+    .productHead {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        height: 1200px;
+        width: 100%;
+    }
+
+    .productCarousel {
+        width: 100%;
+    }
+
+    .productTitle {
+        width: 100%;
+        height: 1000px;
+    }
+
+    .productTitleText h3 {
+        font-size: 20px;
+    }
+
+    .productTitleText h2 {
+        font-size: 37px;
+    }
+
+    .linkContacts {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .linkContactsEl {
+        width: 250px;
+    }
+
+    .nav .nav-tabs {
+        flex-wrap: nowrap;
+    }
+
+    .countItems {
+        padding: 5px;
+    }
+
+    .countText {
+        font-size: 14px;
+    }
+
+    .orderButton {
+        font-size: 18px;
+    }
+
+    .sliderNavEl {
+        background: #fff;
+        width: 100px;
+        background-size: 150px 150px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        height: 100px;
+        /* Задаем фиксированную ширину для миниатюр */
+        margin: 0 10px;
+    }
+
+    .slider-nav img {
+        height: 50px;
+    }
+
+    .sliderImg {
+        height: 320px;
+    }
+
+    .slider-arrows {
+        margin-top: 15px;
+    }
+
+    .sliderContainer {
+        height: auto;
+    }
+
+    .physicalForm {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+
+    .modal-content {
+        margin-bottom: 100px;
+    }
+
+    .listOrders {
+        width: 100%;
+    }
+
+    .formEl {
+        width: 100%;
+        font-size: 12px;
+    }
+
+
+
+
+    /* product.html */
+
 }
 
 @media (max-width: 800px) {
@@ -1095,6 +1409,115 @@
 
 
     /* certificatesInternalPage.html */
+
+    /* product.html */
+
+    .productHead {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        height: 1200px;
+        width: 100%;
+    }
+
+    .productCarousel {
+        width: 100%;
+    }
+
+    .productTitle {
+        width: 100%;
+        height: 1000px;
+    }
+
+    .productTitleText h3 {
+        font-size: 20px;
+    }
+
+    .productTitleText h2 {
+        font-size: 37px;
+    }
+
+    .linkContacts {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .linkContactsEl {
+        width: 250px;
+    }
+
+    .nav .nav-tabs {
+        flex-wrap: nowrap;
+    }
+
+    .countItems {
+        padding: 5px;
+    }
+
+    .countText {
+        font-size: 14px;
+    }
+
+    .orderButton {
+        font-size: 18px;
+    }
+
+    .sliderNavEl {
+        background: #fff;
+        width: 100px;
+        background-size: 150px 150px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        height: 100px;
+        /* Задаем фиксированную ширину для миниатюр */
+        margin: 0 10px;
+    }
+
+    .slider-nav img {
+        height: 50px;
+    }
+
+    .sliderImg {
+        height: 220px;
+    }
+
+    .slider-arrows {
+        margin-top: 10px;
+    }
+
+    .sliderContainer {
+        height: auto;
+    }
+
+    .physicalForm {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+
+    .modal-content {
+        margin-bottom: 100px;
+    }
+
+    .listOrders {
+        width: 100%;
+    }
+
+    .formEl {
+        width: 100%;
+        font-size: 12px;
+    }
+
+
+
+    /* product.html */
 }
 
 
@@ -1243,6 +1666,113 @@
 
 
     /* certificatesInternalPage.html */
+
+    /* product.html */
+
+    .physicalForm {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+
+    .modal-body {
+        margin-bottom: 1px;
+    }
+
+    .listOrders {
+        width: 100%;
+    }
+
+    .formEl {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .productHead {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        height: 1200px;
+        width: 100%;
+    }
+
+    .productCarousel {
+        width: 100%;
+    }
+
+    .productTitle {
+        width: 100%;
+        height: 1000px;
+    }
+
+    .productTitleText h3 {
+        font-size: 20px;
+    }
+
+    .productTitleText h2 {
+        font-size: 37px;
+    }
+
+    .linkContacts {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .linkContactsEl {
+        width: 250px;
+    }
+
+    .nav .nav-tabs {
+        flex-wrap: nowrap;
+    }
+
+    .countItems {
+        padding: 5px;
+    }
+
+    .countText {
+        font-size: 14px;
+    }
+
+    .orderButton {
+        font-size: 18px;
+    }
+
+    .sliderNavEl {
+        background: #fff;
+        width: 100px;
+        background-size: 150px 150px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        height: 100px;
+        /* Задаем фиксированную ширину для миниатюр */
+        margin: 0 10px;
+    }
+
+    .slider-nav img {
+        height: 50px;
+    }
+
+    .sliderImg {
+        height: 220px;
+    }
+
+    .slider-arrows {
+        margin-top: 10px;
+    }
+
+    .sliderContainer {
+        height: auto;
+    }
+
+    /* product.html */
 }
 
 
@@ -1526,6 +2056,113 @@
         width: 100px;
         height: 100px;
     }
+
+    /* product.html */
+
+    .physicalForm {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+
+    .modal-body {
+        margin-bottom: 100px;
+    }
+
+    .listOrders {
+        width: 100%;
+    }
+
+    .formEl {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .productHead {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        height: 1400px;
+        width: 100%;
+    }
+
+    .productCarousel {
+        width: 100%;
+    }
+
+    .productTitle {
+        width: 100%;
+        height: 1000px;
+    }
+
+    .productTitleText h3 {
+        font-size: 20px;
+    }
+
+    .productTitleText h2 {
+        font-size: 37px;
+    }
+
+    .linkContacts {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .linkContactsEl {
+        width: 250px;
+    }
+
+    .nav .nav-tabs {
+        flex-wrap: nowrap;
+    }
+
+    .countItems {
+        padding: 5px;
+    }
+
+    .countText {
+        font-size: 12px;
+    }
+
+    .orderButton {
+        font-size: 16px;
+    }
+
+    .sliderNavEl {
+        background: #fff;
+        width: 100px;
+        background-size: 150px 150px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        height: 100px;
+        /* Задаем фиксированную ширину для миниатюр */
+        margin: 0 10px;
+    }
+
+    .slider-nav img {
+        height: 50px;
+    }
+
+    .sliderImg {
+        height: 180px;
+    }
+
+    .slider-arrows {
+        margin-top: 10px;
+    }
+
+    .sliderContainer {
+        height: auto;
+    }
+
+    /* product.html */
 }
 
 @media (width < 320px) {

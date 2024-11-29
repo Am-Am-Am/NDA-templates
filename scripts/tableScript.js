@@ -1,14 +1,34 @@
-$(document).ready(function () {
-    $('.slider').bxSlider({
-        pagerCustom: '.slider-nav',
-        infiniteLoop: true,
-        hideControlOnEnd: true,
-        captions: true,
-        nextText: '',
-        prevText: '',
-        easing: 'jswing',
+$(document).ready(function(event){
+    $('.slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.slider-nav',
+        arrows: false,
+    });
+
+    $('.slider-nav').slick({
+        dots: false,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 4, 
+        slidesToScroll: 1,
+        asNavFor: '.slider',
+        focusOnSelect: true,
+        arrows: false,
+    });
+    $('.slider-arrows .slick-prev1').click(function() {
+        $('.slider').slick('slickPrev');
+    });
+    
+    $('.slider-arrows .slick-next1').click(function() {
+        $('.slider').slick('slickNext');
     });
 });
+
+
 
 // поле ввода количества
 
