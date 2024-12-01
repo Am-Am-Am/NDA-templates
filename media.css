@@ -817,7 +817,7 @@
     }
 
     .brandInfo h1 {
-        font-size: 64px;
+        font-size: 54px;
     }
 
     .brandInfo h2 {
@@ -1035,7 +1035,7 @@
     }
 
     .emptyEl {
-        display: none;
+  
         width: 240px;
       
     }
@@ -1059,15 +1059,15 @@
     .brandInfo {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .brandInfo h1 {
-        font-size: 64px;
+        font-size: 40px;
     }
 
     .brandInfo h2 {
-        font-size: 22px;
+        font-size: 16px;
     }
 
     .catalogBrandItem {
@@ -1374,7 +1374,6 @@
     }
 
     .emptyEl {
-        display: none;
         width: 240px;
       
     }
@@ -1855,6 +1854,11 @@
         flex-direction: column-reverse;
         padding: 10px;
         height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .brandInfo{
+        align-items: center;
     }
 
     .main {

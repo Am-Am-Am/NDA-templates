@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.slider').slick({
+    $('#slider').slick({
       autoplay: true,
       autoplaySpeed: 3000, // Adjust the speed as needed (in milliseconds)
       speed: 500,          // Adjust animation speed as needed
