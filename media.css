@@ -74,6 +74,8 @@
     }
 
 
+
+
     /* subheader */
     .subheaderInfo h3 {
         font-weight: 500;
@@ -108,7 +110,7 @@
 
     .emptyEl {
         width: 280px;
-        min-height: 450px;
+        
     }
 
     .catalogItem h3 {
@@ -129,7 +131,7 @@
     }
 
     .infoText h3 {
-        font-size: 60px;
+        font-size: 54px;
         white-space: nowrap;
     }
 
@@ -137,12 +139,14 @@
         font-size: 18px;
     }
 
-    .infoImg {
-        width: 520px;
-    }
-
+ 
     .infoMain {
         height: 600px;
+    }
+
+
+    .infoText p {
+        font-size: 16px;
     }
 
     /* product.html */
@@ -195,6 +199,10 @@
     .catalogBrandItemImg {
         width: 190px;
         height: 190px;
+    }
+
+    .sliderContainer {
+        height: 700px;
     }
 
     /* contacts.html */
@@ -310,33 +318,51 @@
     }
 
     .catalogItem {
-        width: 290px;
-        min-height: 370px;
+        width: 220px;
+        min-height: 300px;
     }
 
     .catalogItemImg img {
-        width: 250px;
-        height: 170px;
+        width: 200px;
+        height: 120px;
     }
 
     .emptyEl {
-        width: 290px;
-        min-height: 370px;
+        width: 220px;
+     
+    }
+
+    .catalogItem h3 {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 100%;
+    }
+
+    .catalogItem p {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
     }
 
     .infoText h3 {
-        font-size: 70px;
+        font-size: 56px;
     }
 
     .infoText p {
-        font-size: 16px;
+        font-size: 14px;
+    }
+
+    .sliderImg{
+        height: 700px;
     }
 
 
+    .infoMain{
+        gap: 30px;
+    }
     /* product.html */
-    .bx-wrapper {
-        height: 530px;
-    }
+ 
 
     .slider-nav {
         height: 150px;
@@ -345,7 +371,7 @@
     .productTitle {
         height: 700px;
         padding: 20px;
-    }
+    } */
 
     .productTitleText h3 {
         font-size: 20px;
@@ -363,9 +389,11 @@
         font-size: 16px;
     }
 
-    .productTitleText ul {
-        font-size: 16px;
+    .productTitleText li  {
+        font-size: 18px;
     }
+
+
 
     /* brand.html */
     .main {
@@ -410,7 +438,7 @@
 
     /* product.html */
     .productHead {
-        height: 80vh;
+    
         width: 100%;
     }
 
@@ -723,7 +751,7 @@
 
     .emptyEl {
         width: 220px;
-        min-height: 300px;
+       
     }
 
     .catalogItem h3 {
@@ -742,7 +770,7 @@
     .infoMain {
         display: flex;
         flex-direction: column-reverse;
-        height: 900px;
+        height: 1200px;
         width: 100%;
         align-items: center;
     }
@@ -861,7 +889,6 @@
 
     /* product.html */
     .productHead {
-        height: 80vh;
         width: 100%;
     }
 
@@ -924,6 +951,11 @@
         width: 300px;
     }
 
+
+    .quantity-input button{
+        display: none;
+    }
+
     /* product.html */
 
 }
@@ -950,7 +982,7 @@
     }
 
     .subheaderInfo {
-        margin-top: 0;
+        
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -964,9 +996,13 @@
         text-align: center;
     }
 
+   
+
     .subheaderImage {
         position: relative;
-        bottom: 30px;
+        bottom: 10px;
+        display: flex;
+        justify-content: center;
     }
 
     .subheader:after {
@@ -981,11 +1017,16 @@
     }
 
     .subheaderImage img {
-        height: 50vh;
+        width: auto;
+        height: 40vh;
     }
 
     .subheaderInfo ul {
         margin-bottom: 0;
+    }
+
+    .infoMain{
+        height: 1000px;
     }
 
     /* catalog */
@@ -996,7 +1037,7 @@
     .emptyEl {
         display: none;
         width: 240px;
-        min-height: 300px;
+      
     }
 
     /* brand.html */
@@ -1041,6 +1082,10 @@
     .catalogBrandItemImg {
         width: 140px;
         height: 140px;
+    }
+
+    .infoText h3{
+        font-size: 58px;
     }
 
     /* contacts.html */
@@ -1331,8 +1376,22 @@
     .emptyEl {
         display: none;
         width: 240px;
-        min-height: 300px;
+      
     }
+
+    .infoText h3{
+        font-size: 56px;
+    }
+
+    .slider-container{
+        height: 100%;
+    }
+    
+    .infoMain{
+        height: 1100px;
+    }
+    
+
 
     /* brand.html */
 
@@ -1438,6 +1497,9 @@
         font-size: 37px;
     }
 
+    .productTitleText{
+        font-size: 14px;
+    }
     .linkContacts {
         margin-top: 10px;
         display: flex;
@@ -1596,7 +1658,19 @@
         margin-top: 20px;
     }
 
+    .infoText h3{
+        font-size: 48px;
+    }
 
+    .infoMain{
+        height: 1200px;
+    }
+
+
+    .subheaderImage img {
+        width: auto;
+        height: 40vh;
+    }
 
     /* contacts.html */
 
@@ -1787,6 +1861,12 @@
         margin-top: 120px;
     }
 
+    .infoText h3{
+        font-size: 42px;
+    }
+
+ 
+
 
     /* certificatesInternalPage.html */
 
@@ -1907,7 +1987,7 @@
     }
 
     .infoMain {
-        min-height: 900px;
+        height: 1100px;
     }
 
     .infoText h3 {

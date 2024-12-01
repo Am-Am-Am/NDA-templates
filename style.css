@@ -42,7 +42,7 @@ header {
 
 }
 
-.main1{
+.main1 {
     margin-top: 100px;
 }
 
@@ -106,7 +106,7 @@ nav {
 }
 
 .headerList ul {
-    
+
     width: 100%;
     list-style: none;
     text-decoration: none;
@@ -152,10 +152,11 @@ li>a {
     height: 15px;
 }
 
-.searchSmallScreen{
+.searchSmallScreen {
     display: none;
 }
-.rightSideInner{
+
+.rightSideInner {
     width: 380px;
     display: flex;
     justify-content: flex-end;
@@ -244,7 +245,7 @@ input::placeholder {
     text-decoration: none;
 }
 
-.burger-menu{
+.burger-menu {
     display: none;
 }
 
@@ -256,11 +257,11 @@ input::placeholder {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
+
 
 }
 
-.subheaderInfo {
+.subheaderEl {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -321,6 +322,10 @@ input::placeholder {
     width: 400px;
 }
 
+.subheaderSliderEl{
+    display: flex;
+    justify-content: space-between;
+}
 
 .buttonInfo {
     border-radius: 10px;
@@ -530,19 +535,55 @@ li .active {
 .infoMain {
     display: flex;
     /* justify-content: space-evenly; */
-    align-self: start;
+    align-self: center;
     border-radius: 15px;
     width: calc(100%-120px);
-    min-height: 580px;
     box-shadow: 0 0 60px 15px rgba(0, 0, 0, 0.45);
     background: linear-gradient(135deg, #3e609a 0%, #00304e 100%);
     padding: 60px;
     gap: 60px;
 }
 
-.infoImg img {
-    display: block;
+.infoImg {
     width: 40vw;
+    height: 100%;
+   
+  
+}
+
+
+.sliderImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 3px;
+}
+
+.slider-container{
+    margin: auto;
+}
+.slider {
+    width: 100%;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 10px;
+}
+
+.slick-dots li button:before {
+    color: #000;
+    font-size: 15px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #3391c5;
+    /*Change color of active indicator*/
+    font-size: 15px;
 }
 
 
@@ -557,10 +598,12 @@ li .active {
 .infoText h3 {
     font-family: var(--second-family);
     font-weight: 700;
-    font-size: 90px;
+    font-size: 66px;
     line-height: 111%;
     color: #fff;
     margin: 40px 0 30px 0;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .infoText p {
@@ -753,9 +796,10 @@ li .active {
 
 
 /* стили для brand.html */
-.main{
+.main {
     margin-top: 230px;
 }
+
 .breadCrumbs {
     font-family: var(--font-family);
     font-weight: 500;
@@ -782,11 +826,18 @@ li .active {
 .brandLogo {
     width: 260px;
     height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .brandLogo img {
     width: 260px;
     height: 160px;
+}
+
+.brandInfo {
+    text-align: left;
 }
 
 .brandInfo h1 {
@@ -805,21 +856,22 @@ li .active {
     font-size: 30px;
     color: #1a1a18;
 }
-.catalogBrand{
+
+.catalogBrand {
     margin-top: 100px;
 }
 
-.catalogBrandItems{
+.catalogBrandItems {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
     align-content: space-between;
     gap: 40px;
-    
+
 }
 
-.catalogBrandItems a{
+.catalogBrandItems a {
     text-decoration: none;
     color: #1a1a18;
     display: flex;
@@ -828,23 +880,23 @@ li .active {
     align-items: center;
 }
 
-.catalogBrandItem{
+.catalogBrandItem {
     border-radius: 10px;
     width: calc(50% - 20px);
     height: 230px;
     background: #fff;
-    
+
     border-right: 10px solid #fff;
     border-radius: 10px;
 }
 
-.catalogBrandItem:hover{
+.catalogBrandItem:hover {
     background: #328dc0;
     border-right: 10px solid #242e49;
     color: #fff;
 }
 
-.catalogBrandItemImg{
+.catalogBrandItemImg {
     border-radius: 10px;
     width: 200px;
     height: 200px;
@@ -852,12 +904,13 @@ li .active {
     box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.15);
     background: #fff;
 }
-.catalogBrandItemImg img{
+
+.catalogBrandItemImg img {
     width: 100%;
     height: 100%;
 }
 
-.catalogBrandItemTitle{
+.catalogBrandItemTitle {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 30px;
@@ -886,27 +939,27 @@ li .active {
 
 }
 
-.slick-initialized .slick-slide{
+.slick-initialized .slick-slide {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.slider div{
+.slider div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.slider-nav{
+.slider-nav {
     margin-top: 15px;
 }
 
-.slider-nav div{
+.slider-nav div {
     width: 100%;
 }
 
-.sliderContainer{
+.sliderContainer {
     box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.15);
     background: #fff;
     border-radius: 15px;
@@ -928,45 +981,60 @@ li .active {
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
-    height: 300px; /* Задаем фиксированную ширину для миниатюр */
-      margin: 0 10px;
-  }
+    height: 300px;
+    /* Задаем фиксированную ширину для миниатюр */
+    margin: 0 10px;
+}
 
 .slider-nav {
-    display: flex; /* Используем Flexbox для размещения миниатюр в строку */
-    justify-content: center; /* Центрирование всех элементов */
+    display: flex;
+    /* Используем Flexbox для размещения миниатюр в строку */
+    justify-content: center;
+    /* Центрирование всех элементов */
 }
 
 
-.slick-current{
+.slick-current {
     border: 1px solid #3391C5;
 }
 
 
 .slider-container {
-    position: relative; /* Создаем относительное позиционирование для контейнера */
+    position: relative;
+    /* Создаем относительное позиционирование для контейнера */
 }
 
 .slider-arrows {
-    display: flex; /* Используем Flexbox для лучшего управления */
-    justify-content: center; /* Выравниваем кнопки по центру */
-    gap: 10px; /* Промежуток между кнопками */
+    display: flex;
+    /* Используем Flexbox для лучшего управления */
+    justify-content: center;
+    /* Выравниваем кнопки по центру */
+    gap: 10px;
+    /* Промежуток между кнопками */
     margin-bottom: 20px;
 }
 
-.slick-prev, .slick-next {
-    background-color: rgba(255, 255, 255, 0.8); /* Пример фона */
-    border: none; /* Убираем границу */
-    padding: 10px; /* Отступы для кнопки */
-    cursor: pointer; /* Указываем на возможность клика */
-    border-radius: 5px; /* Скругление углов */
+.slick-prev,
+.slick-next {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Пример фона */
+    border: none;
+    /* Убираем границу */
+    padding: 10px;
+    /* Отступы для кнопки */
+    cursor: pointer;
+    /* Указываем на возможность клика */
+    border-radius: 5px;
+    /* Скругление углов */
 }
 
-.slick-prev:hover, .slick-next:hover {
-    background-color: rgba(255, 255, 255, 1); /* Изменение фона при наведении */
+.slick-prev:hover,
+.slick-next:hover {
+    background-color: rgba(255, 255, 255, 1);
+    /* Изменение фона при наведении */
 }
 
-.slick-prev1{
+.slick-prev1 {
     box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.15);
     background: #fff;
     border-radius: 5px;
@@ -978,11 +1046,11 @@ li .active {
     border: 1px solid #FFFFFF;
 }
 
-.slick-prev1:active{
+.slick-prev1:active {
     border: 1px solid #3391C5;
 }
 
-.slick-next1{
+.slick-next1 {
     box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.15);
     background: #fff;
     border-radius: 5px;
@@ -994,10 +1062,10 @@ li .active {
     border: 1px solid #FFFFFF;
 }
 
-.slick-next1:active{
+.slick-next1:active {
     border: 1px solid #3391C5;
 }
- 
+
 
 .productTitle {
     width: 44vw;
@@ -1109,22 +1177,23 @@ li .active {
 }
 
 
-.productInfoChoice{
+.productInfoChoice {
     display: flex;
-    
+
 }
+
 .productInfoChoice ul {
     display: flex;
     align-items: center;
-    
+
     background-color: #FFFFFF;
     border-radius: 10px;
 }
 
-.productTabContent{
+.productTabContent {
     background-color: #fff;
     box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.15);
-    
+
 }
 
 .nav-pills .nav-link.active {
@@ -1549,7 +1618,8 @@ input .form-control .d-inline-block {
 }
 
 
-.nav-tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+.nav-tabs .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
     background-color: #3391c5;
     font-family: var(--font-family);
     font-weight: 400;
@@ -1561,7 +1631,8 @@ input .form-control .d-inline-block {
     -o-border-radius: 5px;
 }
 
-.nav-tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+.nav-tabs .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
     color: black;
 }
 
@@ -1689,12 +1760,12 @@ input .form-control .d-inline-block {
 
 
 /* contacts.html */
-.contactsBanner{
+.contactsBanner {
     background: #e6f0f8;
 }
 
 
-.contactsMap{
+.contactsMap {
     margin-top: 55px;
     border-radius: 15px;
     height: 600px;
@@ -1705,15 +1776,16 @@ input .form-control .d-inline-block {
     background-size: contain;
     background-repeat: no-repeat;
     /*opacity: 0.8;
-    */filter: grayscale(1);
+    */
+    filter: grayscale(1);
     -ms-filter: grayscale(1);
     -webkit-filter: grayscale(1);
     -moz-filter: grayscale(1);
     -o-filter: grayscale(1);
-  
+
 }
 
-.contactsMap iframe{
+.contactsMap iframe {
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -1721,7 +1793,7 @@ input .form-control .d-inline-block {
     -o-border-radius: 15px;
 }
 
-.addresses{
+.addresses {
     margin-top: 40px;
     width: 100%;
     height: 480px;
@@ -1729,7 +1801,7 @@ input .form-control .d-inline-block {
     justify-content: space-between;
 }
 
-.ContactAddress{
+.ContactAddress {
     background: #fff;
     border-radius: 20px;
     width: 560px;
@@ -1737,7 +1809,7 @@ input .form-control .d-inline-block {
     padding: 30px;
 }
 
-.addressInfo h3{
+.addressInfo h3 {
     margin-top: 40px;
     font-family: var(--font-family);
     font-weight: 500;
@@ -1748,7 +1820,7 @@ input .form-control .d-inline-block {
     margin-bottom: 20px;
 }
 
-.addressInfo p{
+.addressInfo p {
     margin-top: 20px;
     font-family: var(--font-family);
     font-weight: 400;
@@ -1756,14 +1828,14 @@ input .form-control .d-inline-block {
     color: #1a1a18;
 }
 
-.addressInfoEl{
+.addressInfoEl {
     display: flex;
     width: 100%;
     gap: 10px;
     align-items: start;
 }
 
-.addressInfoElText{
+.addressInfoElText {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
@@ -1771,12 +1843,12 @@ input .form-control .d-inline-block {
     margin-bottom: 20px;
 }
 
-.addressInfoElText a{
+.addressInfoElText a {
     text-decoration: none;
     color: #1a1a18;
 }
 
-.application{
+.application {
     border-radius: 20px;
     height: 426px;
     width: 100%;
@@ -1787,11 +1859,11 @@ input .form-control .d-inline-block {
     justify-content: space-between;
 }
 
-.applicationText{
+.applicationText {
     width: 40%;
 }
 
-.applicationText h3{
+.applicationText h3 {
     font-family: var(--third-family);
     font-weight: 700;
     font-size: 90px;
@@ -1799,31 +1871,31 @@ input .form-control .d-inline-block {
     color: #1a1a18;
 }
 
-.applicationText p{
+.applicationText p {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 20px;
     color: #1a1a18;
 }
 
-.applicationForm{
+.applicationForm {
     width: 40%;
 }
 
-.applicationForm a{
+.applicationForm a {
     color: #1b1b1d;
 }
 
-.applicationForm button{
+.applicationForm button {
     margin-bottom: 10px;
 }
 
-.applicationForm .form-floating{
+.applicationForm .form-floating {
     margin-bottom: 20px;
-   
+
 }
 
-.applicationForm .form-control{
+.applicationForm .form-control {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
@@ -1836,16 +1908,16 @@ input .form-control .d-inline-block {
 /* contacts.html */
 
 /* 404.html */
-.body{
+.body {
     background-color: #E6F0F8;
     height: 100vh;
 }
 
-.main .main404{
+.main .main404 {
     margin-top: 0;
 }
 
-.notFoundContent{
+.notFoundContent {
     height: 90vh;
     width: 100%;
     display: flex;
@@ -1853,7 +1925,8 @@ input .form-control .d-inline-block {
     align-items: center;
     padding-top: 100px;
 }
-.notFoundContentTitle{
+
+.notFoundContentTitle {
     margin-top: 150px;
     display: flex;
     flex-direction: column;
@@ -1862,7 +1935,8 @@ input .form-control .d-inline-block {
     height: 100%;
 
 }
-.notFoundContentTitle h1{
+
+.notFoundContentTitle h1 {
     font-family: var(--third-family);
     font-weight: 700;
     font-size: 300px;
@@ -1872,7 +1946,8 @@ input .form-control .d-inline-block {
     color: #1a1a18;
     margin-bottom: 80px;
 }
-.notFoundContentTitle p{
+
+.notFoundContentTitle p {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 35px;
@@ -1881,11 +1956,12 @@ input .form-control .d-inline-block {
     width: 70%;
 }
 
-.notFoundContentTitle a{
+.notFoundContentTitle a {
     text-decoration: none;
     white-space: nowrap;
 }
-.nonFoundContentImage{
+
+.nonFoundContentImage {
     margin-top: 100px;
     width: 50%;
     height: 80%;
@@ -1898,7 +1974,7 @@ input .form-control .d-inline-block {
 /* 404.html */
 
 /* certificatesInternalPage.html */
-.certificatesTable{
+.certificatesTable {
     margin-top: 40px;
     border-radius: 15px;
     box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.15);
@@ -1906,30 +1982,35 @@ input .form-control .d-inline-block {
 }
 
 .certificatesTable table {
-    width: 100%; 
-    table-layout: fixed; 
+    width: 100%;
+    table-layout: fixed;
 }
 
-.certificatesTable thead{
+.certificatesTable thead {
     margin-bottom: 30px;
 }
 
-.certificatesTable th, .certificatesTable td {
-  
+.certificatesTable th,
+.certificatesTable td {
+
     overflow-wrap: break-word;
 }
 
-.certificatesTable th:first-child, .certificatesTable td:first-child {
-    width: 5%; 
+.certificatesTable th:first-child,
+.certificatesTable td:first-child {
+    width: 5%;
 }
 
-.certificatesTable th:nth-child(2), .certificatesTable td:nth-child(2) {
-    width: 60%; 
+.certificatesTable th:nth-child(2),
+.certificatesTable td:nth-child(2) {
+    width: 60%;
 }
 
-.certificatesTable th:nth-child(3), .certificatesTable td:nth-child(3),
-.certificatesTable th:nth-child(4), .certificatesTable td:nth-child(4) {
-    width: 17.5%; 
+.certificatesTable th:nth-child(3),
+.certificatesTable td:nth-child(3),
+.certificatesTable th:nth-child(4),
+.certificatesTable td:nth-child(4) {
+    width: 17.5%;
 }
 
 

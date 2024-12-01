@@ -35,7 +35,7 @@ $(document).ready(function(event){
 function toggleInput(button) {
     const inputDiv = button.nextElementSibling; // Находим div с input
     if (inputDiv.style.display === "none" || inputDiv.style.display === "") {
-        inputDiv.style.display = "block"; // Показываем input
+        inputDiv.style.display = "flex"; // Показываем input
         button.style.display = "none"; // Скрываем кнопку "Добавить"
     } else {
         inputDiv.style.display = "none"; // Скрываем input
