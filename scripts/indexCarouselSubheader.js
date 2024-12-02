@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    $('#slider').slick({
+    $('.slider').slick({
       autoplay: true,
-      autoplaySpeed: 3000, // Adjust the speed as needed (in milliseconds)
+      autoplaySpeed: 5000, // Adjust the speed as needed (in milliseconds)
       speed: 500,          // Adjust animation speed as needed
       slidesToShow: 1,      // Only show one slide at a time
       slidesToScroll: 1,    // Scroll one slide at a time

@@ -252,12 +252,14 @@ input::placeholder {
 
 /* конец шапки */
 /* начало subheader */
+
+
 .subheader {
     padding-top: 130px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-
+    padding: 20px;
 
 }
 
@@ -267,6 +269,31 @@ input::placeholder {
     align-items: start;
     justify-content: start;
     margin-top: 100px;
+
+}
+
+.subheaderTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    text-align: left;
+
+}
+ .subheaderSlider{
+    padding-top: 130px;
+}
+
+
+.subheaderInfo{
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    text-align: left;
+    width: 50vw;
 
 }
 
@@ -280,9 +307,9 @@ input::placeholder {
 }
 
 .subheaderInfo h1 {
-    font-family: var(--second-family);
+    
     font-weight: 700;
-    font-size: 90px;
+    font-size: 80px;
     line-height: 133%;
     color: #1a1a18;
     margin: 0;
@@ -318,9 +345,13 @@ input::placeholder {
 .subheaderImage {
     display: block;
     margin-top: 40px;
-    margin-right: 150px;
+    /* margin-right: 50px; */
     width: 400px;
 }
+.subheaderImage img{
+   width: 100%;
+}
+
 
 .subheaderSliderEl{
     display: flex;
@@ -351,6 +382,7 @@ input::placeholder {
     background-image: url('images/header_bg.svg');
     background-repeat: no-repeat;
     background-position: right top;
+   
     width: 95.4%;
     height: 100%;
     position: absolute;
@@ -385,7 +417,7 @@ input::placeholder {
 h2 {
     font-family: var(--second-family);
     font-weight: 700;
-    font-size: 90px;
+    font-size: 86px;
     line-height: 111%;
     color: #1a1a18;
     text-align: center;
@@ -636,13 +668,13 @@ li .active {
     box-shadow: 0 0 60px 15px rgba(0, 0, 0, 0.45);
     background-size: contain;
     background-repeat: no-repeat;
-    /* opacity: 0.8; */
-    filter: grayscale(1);
+    /*opacity: 0.8;
+    *//*filter: grayscale(1);
     -ms-filter: grayscale(1);
-    -webkit-filter: grayscale(1);
+    -webkit-filter: invert(10%);
     -moz-filter: grayscale(1);
     -o-filter: grayscale(1);
-
+    */
 
 }
 
@@ -942,12 +974,11 @@ li .active {
 .slick-initialized .slick-slide {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .slider div {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -1777,11 +1808,7 @@ input .form-control .d-inline-block {
     background-repeat: no-repeat;
     /*opacity: 0.8;
     */
-    filter: grayscale(1);
-    -ms-filter: grayscale(1);
-    -webkit-filter: grayscale(1);
-    -moz-filter: grayscale(1);
-    -o-filter: grayscale(1);
+   
 
 }
 

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.slider').slick({
+    $('.sliderInfo .slider ').slick({
       autoplay: true,          // Enable autoplay
       autoplaySpeed: 5000,      // Set autoplay speed (2 seconds)
       infinite: true,          // Enable infinite looping
