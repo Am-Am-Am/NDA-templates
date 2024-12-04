@@ -957,6 +957,12 @@
         display: none;
     }
 
+    .quantity-input{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     /* product.html */
 
 }
@@ -1852,6 +1858,11 @@
         height: auto;
     }
 
+    
+    .quantity-input input{
+        width: 100%;
+    }
+
     /* product.html */
 }
 
@@ -1909,6 +1920,10 @@
 
 
     /* certificatesInternalPage.html */
+
+    .btn{
+        font-size: 14px;
+    }
 }
 
 @media (width < 480px) {
@@ -2263,6 +2278,10 @@
 
     .sliderContainer {
         height: auto;
+    }
+
+    .btn{
+        font-size: 12px;
     }
 
     /* product.html */
