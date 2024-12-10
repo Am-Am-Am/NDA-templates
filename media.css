@@ -217,6 +217,31 @@
         font-size: 16px;
     }
 
+    /* footer */
+
+    .footerInner{
+        padding: 60px;
+    }
+
+
+    .footerLogoText{
+        font-size: 18px;
+    }
+
+    .footerDataEls span{
+        font-size: 16px;
+    }
+
+    .footerDataEls h4{
+        font-size: 18px;
+    }
+
+    .footerDataEls li{
+        font-size: 16px;
+    }
+
+
+    /* footer */
     /* product.html */
 
     .productTitleText h3 {
@@ -568,6 +593,18 @@
 
     .infoMain {
         gap: 30px;
+    }
+
+    .footerInner{
+        padding: 30px;
+    }
+
+    .footerBottom{
+        margin-top: 80px;
+    }
+
+    .footerLogo{
+        width: 45%;
     }
 
     /* product.html */
@@ -1065,6 +1102,22 @@
         width: 100%;
     }
 
+    .footerInfo{
+        flex-direction: column;
+    }
+
+    .footerLogo{
+        width: 100%;
+    }
+
+    .footerLogoText{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footerData{
+        width: 100%;
+    }
 
     /* brand.html */
     .main {
@@ -1750,6 +1803,30 @@
         height: 280px;
     }
 
+    .el1 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .el1 img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .el2 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .el2 img {
+        width: 300px;
+        height: 300px;
+    }
+
+
+    .el3 {
+        display: none;
+    }
 
     /* work.html */
 
@@ -1972,6 +2049,7 @@
 
 
 
+
     .listOrders {
         width: 100%;
     }
@@ -1984,6 +2062,24 @@
 
 
     /* product.html */
+
+    /* work.html */
+    .workInfo{
+        height: auto;
+    }
+    .workInfo p {
+        width: 100%;
+    }
+    .el3 {
+        display: none;
+    }
+
+    .el3 img {
+        display: none;
+    }
+
+
+    /* work.html */
 }
 
 
@@ -2075,6 +2171,21 @@
         width: auto;
         height: 40vh;
     }
+
+    /* footer */
+    .footerLogoText{
+        font-size: 14px;
+    }
+
+    .footerDataEls h4{
+        font-size: 18px;
+    }
+
+    .footerDataEls li{
+        font-size: 14px;
+    }
+
+    /* footer */
 
     /* contacts.html */
 
@@ -2256,6 +2367,32 @@
     }
 
     /* product.html */
+
+       /* work.html */
+
+    .reservationImages{
+        justify-content: center;
+    }
+
+    .el1{
+        height: 300px;
+        width: auto;
+    }
+
+    .el1 img{
+        height: 300px;
+        width: auto;
+    }
+    .el2 {
+        display: none;
+    }
+
+    .el2 img {
+        display: none;
+    }
+
+    /* work.html */
+   
 }
 
 
@@ -2317,6 +2454,18 @@
     .btn {
         font-size: 14px;
     }
+
+    /* work.html */
+    .el1{
+        height: 250px;
+        width: auto;
+    }
+
+    .el1 img{
+        height: 250px;
+        width: auto;
+    }
+    /* work.html */
 }
 
 @media (width < 480px) {
@@ -2683,84 +2832,102 @@
     /* work.html */
 
 
-    .workInfo{
+    .workInfo {
         padding: 20px;
         height: auto;
     }
-    .workImage{
+
+    .workImage {
         width: 40px;
         height: 40px;
     }
 
-    .workImage img{
+    .workImage img {
         width: 40px;
         height: 40px;
     }
 
-    .workTitle{
+    .workTitle {
         font-weight: 400;
         font-size: 15px;
         width: 100%;
     }
 
-    .workInfo h2{
+    .workInfo h2 {
         font-size: 37px;
     }
 
-    .workInfo p{
+    .workInfo p {
         font-size: 16px;
         width: 100%
     }
 
-    .howOrder{
+    .howOrder {
         margin-top: 100px;
     }
 
-    h2{
+    h2 {
         margin-top: 100px;
         font-size: 37px;
     }
 
-    .orderStepsEl{
+    .orderStepsEl {
         padding: 20px;
     }
 
-    .orderStepsElNumber{
+    .orderStepsElNumber {
         height: 50px;
         width: 50px;
         font-size: 20px;
     }
 
-    .bullingSteps{
+    .bullingSteps {
         flex-direction: column;
         height: auto;
         width: 100%;
     }
 
-    .bullingStepsEl{
+    .bullingStepsEl {
         width: 100%;
     }
 
-    .reservationImages{
+    .reservationImages {
         align-items: center;
         justify-content: center;
         width: 100%;
     }
-    .el2{
-        display: none;
-    }
-    .el3{
+
+    .el2 {
         display: none;
     }
 
-    .refund{
+    .el3 {
+        display: none;
+    }
+
+    .refund {
         flex-direction: column;
     }
 
-    .refundEl{
+    .refundEl {
         width: 100%;
         height: auto;
     }
+
+    .el1{
+        height: 200px;
+        width: auto;
+    }
+
+    .el1 img{
+        height: 200px;
+        width: auto;
+    }
+
+    .truck{
+        height: 150px;
+    }
+
     /* work.html */
 
 }
