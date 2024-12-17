@@ -17,14 +17,15 @@ body {
     background-color: #F2F2F2;
     padding-right: 0 !important;
     overflow: auto !important;
-
 }
 
 html {
     overflow: auto !important;
 }
 
-
+.searchResult{
+    margin-bottom: 200px;
+}
 
 .button:hover {
     background-color: #4BA3D6;
@@ -689,6 +690,8 @@ li .active {
 
 /* конец main */
 /* начало footer */
+
+
 .footerInner {
     margin-top: 60px;
     border-radius: 15px;
@@ -1004,7 +1007,7 @@ li .active {
 }
 
 .slider-nav img {
-    height: 150px;
+    width: 100%;
     display: block;
 }
 
@@ -1020,6 +1023,11 @@ li .active {
     height: 300px;
     /* Задаем фиксированную ширину для миниатюр */
     margin: 0 10px;
+}
+
+.sliderNavEl img{
+    display: block;
+    width: 100%;
 }
 
 .slider-nav {
@@ -1043,15 +1051,18 @@ li .active {
 .slider-arrows {
     display: flex;
     /* Используем Flexbox для лучшего управления */
-    justify-content: center;
+    justify-content: space-between;
     /* Выравниваем кнопки по центру */
     gap: 10px;
     /* Промежуток между кнопками */
     margin-bottom: 20px;
+    width: 100%;
+   
 }
 
 .slick-prev,
 .slick-next {
+   
     background-color: rgba(255, 255, 255, 0.8);
     /* Пример фона */
     border: none;
@@ -1062,6 +1073,7 @@ li .active {
     /* Указываем на возможность клика */
     border-radius: 5px;
     /* Скругление углов */
+    top: 50px;
 }
 
 .slick-prev:hover,
@@ -1071,11 +1083,13 @@ li .active {
 }
 
 .slick-prev1 {
+    position: relative;
+    bottom: 250px;
     box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.15);
     background: #fff;
-    border-radius: 5px;
-    width: 150px;
-    height: 40px;
+    border-radius: 10px;
+    width: 50px;
+    height: 80px;
     background-image: url('images/products/arrowLeft.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -1087,11 +1101,13 @@ li .active {
 }
 
 .slick-next1 {
+    position: relative;
+    bottom: 250px;
     box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.15);
     background: #fff;
-    border-radius: 5px;
-    width: 150px;
-    height: 40px;
+    border-radius: 10px;
+    width: 50px;
+    height: 80px;
     background-image: url('images/products/arrowRight.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -1209,7 +1225,7 @@ li .active {
 }
 
 .productInfo {
-    margin-top: 140px;
+    margin-top: 200px;
 }
 
 

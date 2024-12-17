@@ -1,32 +1,61 @@
-$(document).ready(function(event){
-    $('.slider').slick({
-        dots: false,
-        infinite: true,
-        speed: 800,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        asNavFor: '.slider-nav',
-        arrows: false,
-    });
+(function($) {
+    $(document).ready(function(event) {
+        var $slider = $('.slider'),
+            $sliderNav = $('.slider-nav'),
+            $prevArrow = $('.slick-prev1'),
+            $nextArrow = $('.slick-next1');
 
-    $('.slider-nav').slick({
-        dots: false,
-        infinite: true,
-        speed: 800,
-        slidesToShow: 4, 
-        slidesToScroll: 1,
-        asNavFor: '.slider',
-        focusOnSelect: true,
-        arrows: false,
+        $slider.slick({
+            dots: false,
+            infinite: false,
+            speed: 800,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            asNavFor: $sliderNav,
+            arrows: true,
+            beforeChange: function(event, slick, currentSlide, nextSlide) {
+                checkArrows(nextSlide);
+            },
+            afterChange: function(event, slick, currentSlide) {
+                checkArrows(currentSlide);
+            }
+        });
+
+        $sliderNav.slick({
+            dots: false,
+            infinite: true,
+            speed: 800,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: $slider,
+            focusOnSelect: true,
+            arrows: false,
+        });
+
+        function checkArrows(slideIndex) {
+            var slideCount = $slider.slick('getSlick').slideCount;
+
+            if (slideIndex === 0) {
+                $prevArrow.hide();
+                $nextArrow.show();
+            } else if (slideIndex === slideCount - 1) {
+                $prevArrow.show();
+                $nextArrow.hide();
+            } else {
+                $prevArrow.show();
+                $nextArrow.show();
+            }
+        }
+
+        $('.slider-arrows .slick-prev1').click(function() {
+            $slider.slick('slickPrev');
+        });
+
+        $('.slider-arrows .slick-next1').click(function() {
+            $slider.slick('slickNext');
+        });
     });
-    $('.slider-arrows .slick-prev1').click(function() {
-        $('.slider').slick('slickPrev');
-    });
-    
-    $('.slider-arrows .slick-next1').click(function() {
-        $('.slider').slick('slickNext');
-    });
-});
+})(jQuery);
 
 
 

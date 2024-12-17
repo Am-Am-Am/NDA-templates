@@ -1,0 +1,300 @@
+{% extends 'core/base1.html' %}
+{% load static %}
+{% load thumbnail %}
+{% block title %}
+<title>{{ category.name }}</title>
+{% endblock %}
+{% block header %}
+
+{% endblock %}
+
+{% block links %}
+<link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'custom/css/custom.css' %}" />
+<script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+<script src="{% static 'htmx/htmx.min.js' %}"></script>
+<script src="https://smartcaptcha.yandexcloud.net/captcha.js" defer></script>
+{% endblock %}
+
+{% block content %}
+<header style="height: 0px;">
+    <!-- летающая шапка -->
+    {% include 'core/components/flyingHeader.html' %}
+
+    <!-- летающая шапка -->
+</header>
+
+<main class="main">
+    <div class="container1">
+
+
+        {% include 'core/components/breadcrumbs.html' %}
+        {% include 'core/components/banner.html' %}
+
+
+        <div class="product">
+            <div class="productHead">
+                <div class="productCarousel">
+                    <div class="sliderContainer">
+                        <div class="slider">
+                            {% for image in images %}
+                            {% thumbnail image.image '600x800' as im %}
+                            <div><img class="sliderImg" src="{{im.url}}"></div>
+                            {% endthumbnail %}
+                            {% endfor %}
+                        </div>
+                        <div class="slider-arrows">
+                            <div class="slick-prev1" style="background-image: url('{% static "
+                                images/products/arrowLeft.svg"%}')"></div>
+                            <div class="slick-next1" style="background-image: url('{% static "
+                                images/products/arrowRight.svg"%}')"></div>
+                        </div>
+                    </div>
+                    <div class="slider-nav nav2">
+
+                        {% for image in images %}
+                        {% with forloop.counter0 as index %}
+                        {% thumbnail image.image '450x450' as im %}
+                        <div class="sliderNavEl stick-cloned">
+                            <a data-slide-index="-{{index}}">
+                                <img src="{{im.url}}" style="width: 100%">
+                            </a>
+                        </div>
+                        {% endthumbnail %}
+                        {% thumbnail image.image '450x450' as im %}
+                        <div class="sliderNavEl">
+                            <a class="{% if index == 0 %}active{% endif %}" data-slide-index="{{index}}">
+                                <img src="{{im.url}}" style="width: 100%">
+                            </a>
+                        </div>
+                        {% endthumbnail %}
+                        {% thumbnail image.image '450x450' as im %}
+                        <div class="sliderNavEl stick-cloned">
+                            <a data-slide-index="{{index}} + images.length + 2 ">
+                                <img src="{{im.url}}" style="width: 100%">
+                            </a>
+                        </div>
+                        {% endthumbnail %}
+                        {% endwith %}
+                        {% endfor %}
+                    </div>
+
+                </div>
+
+
+                <div class="productTitle">
+                    <div class="productTitleText">
+                        <h3>({{brand}})</h3>
+                        <h2>{{ category.name }}</h2>
+                        {{ category.description|safe }}
+
+                    </div>
+                    <div class="productTitleConnect">
+                        <div class="linkText">
+                            Связаться со специалистом по продукции Medtronic Александр Гарцуев:
+                        </div>
+                        <div class="linkContacts">
+                            <a href="tel:79816967084">
+                                <div class="linkContactsEl">
+                                    <img src="{% static " images/productCall.svg" %}" alt="">
+                                    <div>+7 (981) 696 - 70 - 84</div>
+                                </div>
+                            </a>
+                            <a href="mailto:221@nda.ru">
+                                <div class="linkContactsEl">
+                                    <img src="{% static " images/productMail.svg" %}" alt="">
+                                    <div>221@nda.ru</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="productInfo">
+                <div class="productInfoChoice">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link first active" id="pills-description-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-description" type="button" role="tab"
+                                aria-controls="pills-description" aria-selected="true">Описание</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-characteristics-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-characteristics" type="button" role="tab"
+                                aria-controls="pills-characteristics" aria-selected="false">Характеристики</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-order-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-order" type="button" role="tab" aria-controls="pills-order"
+                                aria-selected="false">Оформить заказ</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-catalogs-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-catalogs" type="button" role="tab" aria-controls="pills-catalogs"
+                                aria-selected="false">Каталоги и РУ</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link last" id="pills-video-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-video" type="button" role="tab" aria-controls="pills-video"
+                                aria-selected="false">Видео</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content productTabContent" id="pills-tabContent">
+                    <!-- Описание товара/услуги -->
+                    <div class="tab-pane fade show active" id="pills-description" role="tabpanel"
+                        aria-labelledby="pills-description-tab">
+                        <div class="productDescription">
+
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-characteristics" role="tabpanel"
+                        aria-labelledby="pills-characteristics-tab">
+                        <div class="productSpecifications">
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-order" role="tabpanel" aria-labelledby="pills-order-tab">
+
+                        <div class="placeOrder">
+                            <form action=""></form>
+                            <div class="container1 mt-5">
+                                <table class="table table-responsive table-borderless">
+                                    <thead>
+                                        <tr class="table-header">
+                                            <th class="col-sm-1 text-center">
+                                                Код
+                                            </th>
+                                            <th class="col-sm-10 text-start">
+                                                Описание
+                                            </th>
+                                            <th class="col-sm-1 text-start">
+                                                Уп/шт.
+                                            </th>
+                                            <th class="col-sm-2">
+                                                Количество
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-group-divider">
+                                        {% for offer in offers %}
+                                        <tr class="table-row">
+                                            <td class="text-center align-middle">{{ offer.name }}</td>
+                                            <td class="text-start align-middle">{{ offer.description }}</td>
+                                            <td class="text-start align-middle">{{ offer.shipping_pack }}</td>
+                                            <td class="text-start align-middle">
+
+                                                <button class="btn btn-primary add-button button"
+                                                    onclick="toggleInput(this)">Добавить</button>
+
+                                                <div class="quantity-input" style="display:none;">
+                                                    <form hx-post="{% url 'cart_add' offer_id=offer.pk %}"
+                                                        hx-target="#cart" hx-swap="outerHTML">
+                                                        <div>
+                                                            <div class="inputCount">
+                                                                <button class="btn btn-secondary"
+                                                                    onclick="changeQuantity(this, -1)">-</button>
+
+                                                                <input class="form-control" type="number"
+                                                                    name="quantity" min="1" value="0" required=""
+                                                                    id="id_quantity" />
+
+                                                                <button class="btn btn-secondary"
+                                                                    onclick="changeQuantity(this, 1)">+</button>
+
+                                                            </div>
+
+                                                            <button class="btn button-bg btn-primary" type="submit"
+                                                                value="">Добавить</button>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+
+
+                                            </td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-catalogs" role="tabpanel" aria-labelledby="pills-catalogs-tab">
+                        <div class="catalogTutorial">
+                            <h2>
+                                Каталоги и Руководства по эксплуатации
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab">
+                        <div class="productVideo">
+                            <h2>Видео о товаре/услуге</h2>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="cart">
+                    {% if offers_in_cart|length > 0 %}
+                    <div class="placeResult">
+
+                        <button type="button" class="orderButton" hx-get="{% url 'cart_modal' %}"
+                            hx-target="#dialog">Оформить заказ</button>
+                        <div class="countItems">
+                            <div class="countText">Всего изделий в заказе:</div>
+                            <div class="count">{{ offers_in_cart|length }}</div>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Placeholder for the modal -->
+        <div id="modal" class="modal fade">
+            <div id="dialog" class="modal-dialog" hx-target="this"></div>
+        </div>
+
+        <!-- Empty toast to show the message -->
+
+        <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 2000;">
+            <div id="toast" class="toast align-items-center text-white border-0 bg-success" role="alert"
+                aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div id="toast-body" class="toast-body"></div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+            <div id="toast-warning" class="toast align-items-center text-white border-0 bg-warning" role="alert"
+                aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div id="toast-warning-body" class="toast-body"></div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- плавающий элемент с формами связи -->
+    {% include 'core/components/formsContainer.html' %}
+
+    <!-- плавающий элемент с формами связи -->
+</main>
+{% endblock %}
+
+{% block script %}
+
+<script src="{% static 'scripts/offers-htmx-handlers.js' %}"></script>
+<script src="{% static " scripts/productSlider.js" %}"></script>
+
+{% endblock %}
